@@ -1,4 +1,5 @@
 import CallToAction from "@/components/CallToAction";
+import FormField from "@/components/FormField";
 import BenefitsCard from "@/components/advertisersPage/BenefitsCard";
 import HowItWorksCard from "@/components/advertisersPage/HowItWorksCard";
 import ReviewCard from "@/components/homePage/ReviewCard";
@@ -112,6 +113,22 @@ const page = () => {
             }
             author="CEO, Tech Startup"
           />
+        </div>
+      </section>
+      <section className="mt-[5rem] mb-[3rem]">
+        <h2 className="text-xl mb-[3rem] text-center">
+          Start Your Campaign Today
+        </h2>
+
+        <div className="border-1  border-[#EBE1F2] w-[50%] p-5 mx-auto rounded-lg">
+          <FormField label="Full Name" id={"full-name"} />
+          <FormField label="Email Address" id={"email-address"} />
+          <FormField label="Phone Number" id={"phone-number"} />
+          <FormField label="Company Name" id={"company-name"} />
+          <FormField label="Message" id={"message"} variant={"text-area"} />
+          <div className="flex justify-center mt-[2rem]">
+            <CallToAction label={"Send Message"} />
+          </div>
         </div>
       </section>
     </div>
