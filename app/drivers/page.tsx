@@ -109,10 +109,10 @@ const page = () => {
           />
         </div>
       </section>
-      <section className="mt-[5rem]">
+      <section className="mt-[5rem] mb-[3rem]">
         <h2 className="text-xl mb-[3rem] text-center">Join Us Today</h2>
 
-        <div className="border-1  border-[#EBE1F2] w-[40%] p-5 mx-auto rounded-lg">
+        <div className="border-1  border-[#EBE1F2] w-[50%] p-5 mx-auto rounded-lg">
           <FormField label="Full Name" id={"full-name"} />
           <FormField label="Email Address" id={"email-address"} />
           <FormField label="Phone Number" id={"phone-number"} />
