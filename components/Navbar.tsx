@@ -28,7 +28,14 @@ const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
 
   return (
-    <NextUiNavbar onMenuOpenChange={setIsMenuOpen}>
+    <NextUiNavbar
+      maxWidth="full"
+      position="sticky"
+      classNames={{
+        wrapper: ["max-w-[1282px]"],
+      }}
+      onMenuOpenChange={setIsMenuOpen}
+    >
       <NavbarContent>
         <NavbarMenuToggle
           aria-label={isMenuOpen ? "Close menu" : "Open menu"}
