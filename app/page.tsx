@@ -3,6 +3,7 @@ import Navbar from "@/components/Navbar";
 import HowItWorksCard from "@/components/homePage/HowItWorksCard";
 import ReviewCard from "@/components/homePage/ReviewCard";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -17,7 +18,9 @@ export default function Home() {
               Transform Your Commute into Profit
             </h1>
             <div className="flex-start">
-              <CallToAction label={"Get Started Today"} />
+              <Link href={"/drivers/#contact-us"}>
+                <CallToAction label={"Get Started Today"} />
+              </Link>
             </div>
           </div>
         </div>
@@ -72,7 +75,9 @@ export default function Home() {
                 effortlessly.
               </p>
               <div className="flex-start mt-4">
-                <CallToAction label={"Get Started Today"} />
+                <Link href={"/drivers/#contact-us"}>
+                  <CallToAction label={"Become a Driver"} />
+                </Link>
               </div>
             </div>
             <div className="w-[50%] flex items-center justify-center">
@@ -93,7 +98,9 @@ export default function Home() {
                 ensuring maximum visibility.
               </p>
               <div className="flex-start mt-4">
-                <CallToAction label={"Advertise with Us"} />
+                <Link href={"/for-advertisers/#contact-us"}>
+                  <CallToAction label={"Advertise with Us"} />
+                </Link>
               </div>
             </div>
           </div>
@@ -129,7 +136,9 @@ export default function Home() {
                 you.
               </p>
               <div className="flex-start mt-4">
-                <CallToAction label={"Contact Us Today"} />
+                <Link href={"/for-advertisers/#contact-us"}>
+                  <CallToAction label={"Contact Us Today"} />
+                </Link>
               </div>
             </div>
             <div className="w-[50%] flex items-center justify-center">

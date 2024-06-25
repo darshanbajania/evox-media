@@ -109,7 +109,7 @@ const page = () => {
           />
         </div>
       </section>
-      <section className="mt-[5rem] mb-[3rem]">
+      <section id="contact-us" className="mt-[5rem] mb-[3rem]">
         <h2 className="text-xl mb-[3rem] text-center">Join Us Today</h2>
 
         <div className="border-1  border-[#EBE1F2] w-[50%] p-5 mx-auto rounded-lg">
