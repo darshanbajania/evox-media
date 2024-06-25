@@ -1,5 +1,6 @@
 import CallToAction from "@/components/CallToAction";
 import Navbar from "@/components/Navbar";
+import HowItWorksCard from "@/components/homePage/HowItWorksCard";
 import Image from "next/image";
 
 export default function Home() {
@@ -32,6 +33,30 @@ export default function Home() {
             sides, provide dynamic advertising opportunities as they travel
             across the city.
           </p>
+        </div>
+      </section>
+      <section className="mt-[2rem]">
+        <h2 className="text-[2rem] ">How it Works?</h2>
+        <div className="flex justify-between my-4">
+          <HowItWorksCard
+            title={"Step 1"}
+            description={
+              "Easily attach our innovative delivery box to your vehicle"
+            }
+            imagePath={"delivery-box-rack-for-bike.png"}
+          />
+          <HowItWorksCard
+            title={"Step 2"}
+            description={
+              "Dynamic ads play on screens, reaching a wide audience as you drive."
+            }
+            imagePath={"evox-bike-2.png"}
+          />
+          <HowItWorksCard
+            title={"Step 3"}
+            description={"Get paid for driving and advertising."}
+            imagePath={"giving-payment.png"}
+          />
         </div>
       </section>
     </div>
