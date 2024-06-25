@@ -3,6 +3,7 @@ import FormField from "@/components/FormField";
 import BenefitsCard from "@/components/advertisersPage/BenefitsCard";
 import HowItWorksCard from "@/components/advertisersPage/HowItWorksCard";
 import ReviewCard from "@/components/homePage/ReviewCard";
+import Link from "next/link";
 import React from "react";
 
 const page = () => {
@@ -41,7 +42,9 @@ const page = () => {
               Advertise on the Move and Maximize Your Brand’s Visibility
             </p>
             <div className="flex-start mt-[2rem]">
-              <CallToAction label={"Advertise with Us"} />
+              <Link href={"/for-advertisers/#contact-us"}>
+                <CallToAction label={"Advertise with Us"} />
+              </Link>
             </div>
           </div>
         </div>

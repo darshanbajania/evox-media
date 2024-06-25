@@ -14,6 +14,13 @@ import {
 import Logo from "./Logo";
 import CallToAction from "./CallToAction";
 import { useRouter } from "next/navigation";
+import {
+  Dropdown,
+  DropdownTrigger,
+  DropdownMenu,
+  DropdownSection,
+  DropdownItem,
+} from "@nextui-org/dropdown";
 
 const menuItems = [
   "Profile",
@@ -27,9 +34,28 @@ const menuItems = [
   "Help & Feedback",
   "Log Out",
 ];
+const items = [
+  {
+    key: "for-drivers",
+    label: "For Drivers",
+  },
+  {
+    key: "for-advertisers",
+    label: "For Advertisers",
+  },
+];
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
   const router = useRouter();
+
+  const handleAction = (key: string) => {
+    if (key === "for-drivers") {
+      router.push("/drivers");
+    }
+    if (key === "for-advertisers") {
+      router.push("/for-advertisers");
+    }
+  };
   return (
     <NextUiNavbar
       maxWidth="full"
@@ -64,9 +90,29 @@ const Navbar = () => {
           </Link>
         </NavbarItem>
         <NavbarItem>
-          <Link color="foreground" href="/#services">
+          <Dropdown>
+            <DropdownTrigger>
+              <div className="cursor-pointer">Services</div>
+            </DropdownTrigger>
+            <DropdownMenu
+              onAction={handleAction}
+              aria-label="Dynamic Actions"
+              items={items}
+            >
+              {(item) => (
+                <DropdownItem
+                  key={item.key}
+                  color={item.key === "delete" ? "danger" : "default"}
+                  className={item.key === "delete" ? "text-danger" : ""}
+                >
+                  {item.label}
+                </DropdownItem>
+              )}
+            </DropdownMenu>
+          </Dropdown>
+          {/* <Link color="foreground" href="/#services">
             Services
-          </Link>
+          </Link> */}
         </NavbarItem>
         <NavbarItem>
           <Link color="foreground" href="/for-advertisers/#contact-us">

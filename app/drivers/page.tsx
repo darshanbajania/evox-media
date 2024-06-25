@@ -4,7 +4,7 @@ import BenefitsCard from "@/components/driversPage/BenefitsCard";
 import HowItWorksCard from "@/components/driversPage/HowItWorksCard";
 import ReviewCard from "@/components/homePage/ReviewCard";
 import React from "react";
-
+import Link from "next/link";
 const page = () => {
   return (
     <div className="max-w-[1244px] mx-auto">
@@ -38,7 +38,9 @@ const page = () => {
               Turn Your Daily Routes into a Revenue Stream with Evox Media
             </p>
             <div className="flex-start mt-[2rem]">
-              <CallToAction label={"Join Our Driver Network"} />
+              <Link href={"/drivers/#contact-us"}>
+                <CallToAction label={"Join Our Driver Network"} />
+              </Link>
             </div>
           </div>
         </div>
