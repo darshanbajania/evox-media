@@ -1,5 +1,6 @@
 import CallToAction from "@/components/CallToAction";
 import BenefitsCard from "@/components/advertisersPage/BenefitsCard";
+import HowItWorksCard from "@/components/advertisersPage/HowItWorksCard";
 import React from "react";
 
 const page = () => {
@@ -68,6 +69,31 @@ const page = () => {
               imagePath={"statistics-icon.png"}
             />
           </div>
+        </div>
+      </section>
+      <section className="mt-[5rem]">
+        <h2 className="text-xl text-center">How it Works?</h2>
+        <div className="flex justify-between mt-[5rem]">
+          <HowItWorksCard
+            title={"Select Your Campaign"}
+            description={"Choose your advertising campaign details"}
+            imagePath={"people-discussing.png"}
+          />
+          <HowItWorksCard
+            title={"Target Locations"}
+            description={"Select target locations for maximum reach"}
+            imagePath={"locations.png"}
+          />
+          <HowItWorksCard
+            title={"Display Ads"}
+            description={"Your ads are displayed on delivery boxes"}
+            imagePath={"delivery-box-advertisement-3.png"}
+          />
+          <HowItWorksCard
+            title={"Track Performance"}
+            description={"Monitor ad performance with our analytics"}
+            imagePath={"person-using-laptop.png"}
+          />
         </div>
       </section>
     </div>
