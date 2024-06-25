@@ -1,6 +1,7 @@
 import CallToAction from "@/components/CallToAction";
 import BenefitsCard from "@/components/advertisersPage/BenefitsCard";
 import HowItWorksCard from "@/components/advertisersPage/HowItWorksCard";
+import ReviewCard from "@/components/homePage/ReviewCard";
 import React from "react";
 
 const page = () => {
@@ -71,7 +72,7 @@ const page = () => {
           </div>
         </div>
       </section>
-      <section className="mt-[5rem]">
+      <section className="mt-[5rem] pb-[2rem]">
         <h2 className="text-xl text-center">How it Works?</h2>
         <div className="flex justify-between mt-[5rem]">
           <HowItWorksCard
@@ -93,6 +94,23 @@ const page = () => {
             title={"Track Performance"}
             description={"Monitor ad performance with our analytics"}
             imagePath={"person-using-laptop.png"}
+          />
+        </div>
+      </section>
+      <section className="mt-[5rem] pb-[2rem]">
+        <h2 className="text-xl mb-[3rem] text-center">Success Stories</h2>
+        <div className="mt-5 flex justify-around  ">
+          <ReviewCard
+            review={
+              "Our brand's visibility increased significantly with Evox Media's mobile ads. Highly effective!"
+            }
+            author={"Marketing Director, Retail Company"}
+          />
+          <ReviewCard
+            review={
+              "We saw a 30% boost in customer engagement after advertising with Evox Media."
+            }
+            author="CEO, Tech Startup"
           />
         </div>
       </section>
