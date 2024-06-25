@@ -22,9 +22,9 @@ export default function Home() {
         </div>
       </section>
       <section className="mt-[2rem]">
-        <h2 className="text-[2rem] ">Who we are</h2>
+        <h2 className="text-xl mb-1">Who we are</h2>
         <div className="w-[40%]">
-          <p className="mb-2">
+          <p className="mb-2 text-[#51545C]">
             Evox Media is revolutionizing outdoor advertising by leveraging the
             mobility of delivery vehicles.{" "}
           </p>
@@ -36,8 +36,8 @@ export default function Home() {
         </div>
       </section>
       <section className="mt-[2rem]">
-        <h2 className="text-[2rem] ">How it Works?</h2>
-        <div className="flex justify-between my-4">
+        <h2 className="text-xl text-center">How it Works?</h2>
+        <div className="flex justify-between mt-[3rem]">
           <HowItWorksCard
             title={"Step 1"}
             description={
