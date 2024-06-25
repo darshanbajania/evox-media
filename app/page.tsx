@@ -23,8 +23,8 @@ export default function Home() {
         </div>
       </section>
       <div className="max-w-[1024px] mx-auto">
-        <section className="mt-[2rem]">
-          <h2 className="text-xl mb-1">Who we are</h2>
+        <section id="about-us" className="">
+          <h2 className="text-xl mb-1 pt-[2rem]">Who we are</h2>
           <div className="w-[40%]">
             <p className="mb-2 text-[#51545C]">
               Evox Media is revolutionizing outdoor advertising by leveraging
@@ -38,8 +38,8 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="mt-[5rem]">
-          <h2 className="text-xl text-center">How it Works?</h2>
+        <section id="how-it-works" className="">
+          <h2 className="text-xl text-center mt-[5rem]">How it Works?</h2>
           <div className="flex justify-between mt-[5rem]">
             <HowItWorksCard
               title={"Step 1"}
@@ -62,7 +62,7 @@ export default function Home() {
             />
           </div>
         </section>
-        <section>
+        <section id="services">
           <div className="flex h-[500px]  pt-5">
             <div className="flex  flex-1 flex-col justify-center">
               <h1 className="text-xl w-[80%]">Earn Money While You Drive</h1>

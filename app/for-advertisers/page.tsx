@@ -115,7 +115,7 @@ const page = () => {
           />
         </div>
       </section>
-      <section className="mt-[5rem] mb-[3rem]">
+      <section id="contact-us" className="mt-[5rem] mb-[3rem]">
         <h2 className="text-xl mb-[3rem] text-center">
           Start Your Campaign Today
         </h2>

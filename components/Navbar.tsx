@@ -11,6 +11,8 @@ import {
   Link,
   Button,
 } from "@nextui-org/react";
+import Logo from "./Logo";
+import CallToAction from "./CallToAction";
 
 const menuItems = [
   "Profile",
@@ -42,36 +44,47 @@ const Navbar = () => {
           className="sm:hidden"
         />
         <NavbarBrand>
-          <p className="font-bold text-inherit">Logo</p>
+          {/* <p className="font-bold text-inherit">Logo</p> */}
+          <Link href="/">
+            <Logo />
+          </Link>
         </NavbarBrand>
       </NavbarContent>
 
       <NavbarContent className="hidden sm:flex gap-4" justify="center">
         <NavbarItem>
-          <Link color="foreground" href="#">
+          <Link color="foreground" href="/#about-us">
             Features
           </Link>
         </NavbarItem>
-        <NavbarItem isActive>
-          <Link href="#" aria-current="page">
-            Customers
+        <NavbarItem>
+          <Link color="foreground" href="/#how-it-works">
+            How It Works?
           </Link>
         </NavbarItem>
         <NavbarItem>
-          <Link color="foreground" href="#">
-            Integrations
+          <Link color="foreground" href="/#services">
+            Services
+          </Link>
+        </NavbarItem>
+        <NavbarItem>
+          <Link color="foreground" href="/for-advertisers/#contact-us">
+            Contact Us
           </Link>
         </NavbarItem>
       </NavbarContent>
       <NavbarContent justify="end">
-        <NavbarItem className="hidden lg:flex">
+        <Link href="/for-advertisers/#contact-us">
+          <CallToAction label={"Join Now"} />
+        </Link>
+        {/* <NavbarItem className="hidden lg:flex">
           <Link href="#">Login</Link>
         </NavbarItem>
         <NavbarItem>
           <Button as={Link} color="primary" href="#" variant="flat">
             Sign Up
           </Button>
-        </NavbarItem>
+        </NavbarItem> */}
       </NavbarContent>
       <NavbarMenu>
         {menuItems.map((item, index) => (
