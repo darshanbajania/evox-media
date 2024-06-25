@@ -131,7 +131,7 @@ export default function Home() {
                 Ready to Transform Your Advertising?
               </h1>
               <p className="text-xl text-[#51545C] mt-4 w-[80%]">
-                Whether you're a driver looking to earn more or a business
+                Whether you&#39;re a driver looking to earn more or a business
                 seeking effective advertising, Evox Media has the solution for
                 you.
               </p>

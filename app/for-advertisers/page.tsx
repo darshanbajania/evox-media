@@ -106,7 +106,7 @@ const page = () => {
         <div className="mt-5 flex justify-around  ">
           <ReviewCard
             review={
-              "Our brand's visibility increased significantly with Evox Media's mobile ads. Highly effective!"
+              "Our brand&#39;s visibility increased significantly with Evox Media&#39;s mobile ads. Highly effective!"
             }
             author={"Marketing Director, Retail Company"}
           />
