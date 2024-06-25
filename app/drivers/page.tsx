@@ -1,6 +1,7 @@
 import CallToAction from "@/components/CallToAction";
 import BenefitsCard from "@/components/driversPage/BenefitsCard";
 import HowItWorksCard from "@/components/driversPage/HowItWorksCard";
+import ReviewCard from "@/components/homePage/ReviewCard";
 import React from "react";
 
 const page = () => {
@@ -87,6 +88,23 @@ const page = () => {
             title={"Step 3"}
             description={"Get paid for driving and advertising."}
             imagePath={"giving-payment.png"}
+          />
+        </div>
+      </section>
+      <section className="mt-[5rem]">
+        <h2 className="text-xl mb-[3rem] text-center">What Our Clients Say</h2>
+        <div className="mt-5 flex justify-around  ">
+          <ReviewCard
+            review={
+              "Evox Media has made it so easy to earn extra income. I just drive my usual routes and get paid!"
+            }
+            author={"Alex D"}
+          />
+          <ReviewCard
+            review={
+              "The installation was quick and the earnings are great. Highly recommend for any driver."
+            }
+            author="Jamie S."
           />
         </div>
       </section>
