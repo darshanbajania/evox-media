@@ -1,6 +1,7 @@
 import CallToAction from "@/components/CallToAction";
 import Navbar from "@/components/Navbar";
 import HowItWorksCard from "@/components/homePage/HowItWorksCard";
+import ReviewCard from "@/components/homePage/ReviewCard";
 import Image from "next/image";
 
 export default function Home() {
@@ -93,6 +94,23 @@ export default function Home() {
               <CallToAction label={"Advertise with Us"} />
             </div>
           </div>
+        </div>
+      </section>
+      <section className="mt-[5rem]">
+        <h2 className="text-xl mb-[3rem] text-center">What Our Clients Say</h2>
+        <div className="mt-5 flex justify-around  ">
+          <ReviewCard
+            review={
+              "Evox Media has transformed our advertising strategy. The exposure we get from mobile ads is unparalleled!"
+            }
+            author={"Happy Client"}
+          />
+          <ReviewCard
+            review={
+              "I love earning extra money while driving my usual routes. Evox Media made it so easy."
+            }
+            author="Happy Driver"
+          />
         </div>
       </section>
     </div>
