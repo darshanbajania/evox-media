@@ -1,4 +1,5 @@
 import CallToAction from "@/components/CallToAction";
+import BenefitsCard from "@/components/advertisersPage/BenefitsCard";
 import React from "react";
 
 const page = () => {
@@ -39,6 +40,33 @@ const page = () => {
             <div className="flex-start mt-[2rem]">
               <CallToAction label={"Advertise with Us"} />
             </div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div className="pt-[100px] pb-[50px]">
+          <h2 className="text-xl mb-[2rem] ">Why Advertise with Evox Media?</h2>
+          <div className="flex justify-between">
+            <BenefitsCard
+              title={"Wide Reach"}
+              description={"Capture attention across the city"}
+              imagePath={"people-icon.png"}
+            />
+            <BenefitsCard
+              title={"Dynamic Displays"}
+              description={"High-definition screens for vibrant ads."}
+              imagePath={"frame.png"}
+            />
+            <BenefitsCard
+              title={"Cost-Effective"}
+              description={"Affordable advertising solution."}
+              imagePath={"salary-icon.png"}
+            />
+            <BenefitsCard
+              title={"Detailed Analytics"}
+              description={"Track and measure your campaign’s success"}
+              imagePath={"statistics-icon.png"}
+            />
           </div>
         </div>
       </section>
