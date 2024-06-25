@@ -13,6 +13,7 @@ import {
 } from "@nextui-org/react";
 import Logo from "./Logo";
 import CallToAction from "./CallToAction";
+import { useRouter } from "next/navigation";
 
 const menuItems = [
   "Profile",
@@ -28,7 +29,7 @@ const menuItems = [
 ];
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
-
+  const router = useRouter();
   return (
     <NextUiNavbar
       maxWidth="full"
@@ -74,17 +75,12 @@ const Navbar = () => {
         </NavbarItem>
       </NavbarContent>
       <NavbarContent justify="end">
-        <Link href="/for-advertisers/#contact-us">
-          <CallToAction label={"Join Now"} />
-        </Link>
-        {/* <NavbarItem className="hidden lg:flex">
-          <Link href="#">Login</Link>
-        </NavbarItem>
-        <NavbarItem>
-          <Button as={Link} color="primary" href="#" variant="flat">
-            Sign Up
-          </Button>
-        </NavbarItem> */}
+        <CallToAction
+          handleOnClick={() => {
+            router.push("/for-advertisers/#contact-us");
+          }}
+          label={"Join Now"}
+        />
       </NavbarContent>
       <NavbarMenu>
         {menuItems.map((item, index) => (
