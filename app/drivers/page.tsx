@@ -1,5 +1,6 @@
 import CallToAction from "@/components/CallToAction";
 import BenefitsCard from "@/components/driversPage/BenefitsCard";
+import HowItWorksCard from "@/components/driversPage/HowItWorksCard";
 import React from "react";
 
 const page = () => {
@@ -41,7 +42,7 @@ const page = () => {
         </div>
       </section>
       <section>
-        <div className="py-[100px]">
+        <div className="pt-[100px] pb-[50px]">
           <h2 className="text-xl mb-[2rem] text-center">
             Why Drive with Evox Media?
           </h2>
@@ -63,6 +64,30 @@ const page = () => {
               imagePath={"customer-support.png"}
             />
           </div>
+        </div>
+      </section>
+      <section className="mt-[5rem]">
+        <h2 className="text-xl text-center">How it Works?</h2>
+        <div className="flex justify-between mt-[5rem]">
+          <HowItWorksCard
+            title={"Step 1"}
+            description={
+              "Easily attach our innovative delivery box to your vehicle"
+            }
+            imagePath={"delivery-box-rack-for-bike.png"}
+          />
+          <HowItWorksCard
+            title={"Step 2"}
+            description={
+              "Dynamic ads play on screens, reaching a wide audience as you drive."
+            }
+            imagePath={"evox-bike-2.png"}
+          />
+          <HowItWorksCard
+            title={"Step 3"}
+            description={"Get paid for driving and advertising."}
+            imagePath={"giving-payment.png"}
+          />
         </div>
       </section>
     </div>
