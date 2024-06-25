@@ -38,7 +38,7 @@ const page = () => {
               Turn Your Daily Routes into a Revenue Stream with Evox Media
             </p>
             <div className="flex-start mt-[2rem]">
-              <CallToAction label={"Get Started Today"} />
+              <CallToAction label={"Join Our Driver Network"} />
             </div>
           </div>
         </div>
