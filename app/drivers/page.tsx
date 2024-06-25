@@ -1,4 +1,5 @@
 import CallToAction from "@/components/CallToAction";
+import FormField from "@/components/FormField";
 import BenefitsCard from "@/components/driversPage/BenefitsCard";
 import HowItWorksCard from "@/components/driversPage/HowItWorksCard";
 import ReviewCard from "@/components/homePage/ReviewCard";
@@ -106,6 +107,19 @@ const page = () => {
             }
             author="Jamie S."
           />
+        </div>
+      </section>
+      <section className="mt-[5rem]">
+        <h2 className="text-xl mb-[3rem] text-center">Join Us Today</h2>
+
+        <div className="border-1  border-[#EBE1F2] w-[40%] p-5 mx-auto rounded-lg">
+          <FormField label="Full Name" id={"full-name"} />
+          <FormField label="Email Address" id={"email-address"} />
+          <FormField label="Phone Number" id={"phone-number"} />
+          <FormField label="Message" id={"message"} variant={"text-area"} />
+          <div className="flex justify-center mt-[2rem]">
+            <CallToAction label={"Send Message"} />
+          </div>
         </div>
       </section>
     </div>
