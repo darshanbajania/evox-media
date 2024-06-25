@@ -3,8 +3,12 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <div>
-      <h1>Hello World</h1>
+    <div className="max-w-[1244px] mx-auto">
+      <section>
+        <div>
+          <img src="" />
+        </div>
+      </section>
     </div>
   );
 }
