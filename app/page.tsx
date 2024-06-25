@@ -77,6 +77,24 @@ export default function Home() {
           </div>
         </div>
       </section>
+      <section>
+        <div className="flex   mt-[3rem]">
+          <div className="w-[50%] flex items-center ">
+            <img src="delivery-box-advertisement-2.png" className="w-[60%]" />
+          </div>
+          <div className="flex  flex-1 flex-col ">
+            <h1 className="text-xl w-[80%]">Maximize Your Reach</h1>
+            <p className="text-xl text-[#51545C] mt-4 w-[80%]">
+              Capture the attention of thousands daily. Advertise with Evox
+              Media and place your brand on screens that travel the city,
+              ensuring maximum visibility.
+            </p>
+            <div className="flex-start mt-4">
+              <CallToAction label={"Advertise with Us"} />
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
   );
 }
