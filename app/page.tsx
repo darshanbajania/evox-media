@@ -113,6 +113,25 @@ export default function Home() {
           />
         </div>
       </section>
+      <section>
+        <div className="flex h-[500px]  pt-5">
+          <div className="flex  flex-1 flex-col justify-center">
+            <h1 className="text-xl w-[80%]">
+              Ready to Transform Your Advertising?
+            </h1>
+            <p className="text-xl text-[#51545C] mt-4 w-[80%]">
+              Whether you're a driver looking to earn more or a business seeking
+              effective advertising, Evox Media has the solution for you.
+            </p>
+            <div className="flex-start mt-4">
+              <CallToAction label={"Contact Us Today"} />
+            </div>
+          </div>
+          <div className="w-[50%] flex items-center justify-center">
+            {/* <img src="happy-delivery-person.png" className="w-[80%]" /> */}
+          </div>
+        </div>
+      </section>
     </div>
   );
 }
