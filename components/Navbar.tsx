@@ -81,15 +81,25 @@ const Navbar = () => {
       <NavbarContent className="hidden sm:flex gap-4" justify="center">
         <NavbarItem>
           <Link color="foreground" href="/#about-us">
-            Features
+            Advertise with Us
           </Link>
         </NavbarItem>
         <NavbarItem>
           <Link color="foreground" href="/#how-it-works">
-            How It Works?
+            Rider Sign Up
           </Link>
         </NavbarItem>
         <NavbarItem>
+          <Link color="foreground" href="/#how-it-works">
+            Company
+          </Link>
+        </NavbarItem>
+        <NavbarItem>
+          <Link color="foreground" href="/#how-it-works">
+            Blogs
+          </Link>
+        </NavbarItem>
+        {/* <NavbarItem>
           <Dropdown>
             <DropdownTrigger>
               <div className="cursor-pointer">Services</div>
@@ -110,22 +120,19 @@ const Navbar = () => {
               )}
             </DropdownMenu>
           </Dropdown>
-          {/* <Link color="foreground" href="/#services">
-            Services
-          </Link> */}
-        </NavbarItem>
-        <NavbarItem>
+        </NavbarItem> */}
+        {/* <NavbarItem>
           <Link color="foreground" href="/for-advertisers/#contact-us">
             Contact Us
           </Link>
-        </NavbarItem>
+        </NavbarItem> */}
       </NavbarContent>
       <NavbarContent justify="end">
         <CallToAction
           handleOnClick={() => {
             router.push("/for-advertisers/#contact-us");
           }}
-          label={"Join Now"}
+          label={"Advertise With Us"}
         />
       </NavbarContent>
       <NavbarMenu>

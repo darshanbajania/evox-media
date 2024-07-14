@@ -9,11 +9,29 @@ export default function Home() {
   return (
     <div className="max-w-[1244px] mx-auto">
       <section>
-        <div className="flex h-[500px]  pt-5">
-          <div className="w-[50%] flex items-center justify-center">
-            <img src="evox-bike.png" className="w-[300px]" />
+        <div className="flex h-[700px]  pt-5 relative">
+          <div className="absolute h-[500px] w-full  -z-10">
+            <div className="relative">
+              <div className="bg-black opacity-60 absolute top-0 left-0 w-full h-full"></div>
+              <video autoPlay className="w-full h-[700px]">
+                <source src="food-delivery-video.mp4" type="video/mp4" />
+              </video>
+            </div>
           </div>
-          <div className="flex  flex-1 flex-col justify-center">
+          <div className="flex  items-center flex-col justify-center">
+            <h1 className="text-[3rem] w-[80%] text-white text-center">
+              The only out of home advertising that delivers conversions
+            </h1>
+            <div className="">
+              <Link href={"/drivers/#contact-us"}>
+                <CallToAction label={"let us show you how"} />
+              </Link>
+            </div>
+          </div>
+          {/* <div className="w-[50%] flex items-center justify-center">
+            <img src="evox-bike.png" className="w-[300px]" />
+          </div> */}
+          {/* <div className="flex  flex-1 flex-col justify-center">
             <h1 className="text-[3rem] w-[80%]">
               Transform Your Commute into Profit
             </h1>
@@ -22,7 +40,7 @@ export default function Home() {
                 <CallToAction label={"Get Started Today"} />
               </Link>
             </div>
-          </div>
+          </div> */}
         </div>
       </section>
       <div className="max-w-[1024px] mx-auto">
