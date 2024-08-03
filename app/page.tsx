@@ -43,19 +43,60 @@ export default function Home() {
           </div> */}
         </div>
       </section>
-      <div className="max-w-[1024px] mx-auto">
+      <div className="max-w-[1024px] mx-auto pt-[4rem]">
         <section id="about-us" className="">
-          <h2 className="text-xl mb-1 pt-[2rem]">Who we are</h2>
-          <div className="w-[40%]">
-            <p className="mb-2 text-[#51545C]">
-              Evox Media is revolutionizing outdoor advertising by leveraging
-              the mobility of delivery vehicles.{" "}
-            </p>
-            <p className="text-[#51545C]">
-              Our delivery boxes, equipped with high-definition screens on three
-              sides, provide dynamic advertising opportunities as they travel
-              across the city.
-            </p>
+          <div className="flex items-center  relative h-[200px]">
+            <div className=" pr-3 h-full  relative flex items-stretch">
+              <div className="h-full border-r-1 flex items-center pr-5">
+                <h2 className="text-xl  ">Our Supporters</h2>
+              </div>
+            </div>
+            <div className="flex flex-1 flex-wrap justify-between gap-x-2 gap-y-4">
+              <img
+                src="assets/partner-logos/gaston-logo.png"
+                className="w-[150px] h-[50px] object-contain"
+              />
+              <img
+                src="assets/partner-logos/jegnus-logo.png"
+                className="w-[150px] h-[50px] object-contain"
+              />
+              <img
+                src="assets/partner-logos/matru-logo.png"
+                className="w-[150px] h-[50px] object-contain"
+              />
+              <img
+                src="assets/partner-logos/spco-logo.png"
+                className="w-[150px] h-[50px] object-contain"
+              />
+              <img
+                src="assets/partner-logos/meal-tech-logo.png"
+                className="w-[150px] h-[50px] object-contain"
+              />
+              <img
+                src="assets/partner-logos/just-eat-logo.png"
+                className="w-[150px] h-[50px] object-contain"
+              />
+              <img
+                src="assets/partner-logos/bosch-logo.png"
+                className="w-[150px] h-[50px] object-contain"
+              />
+              <img
+                src="assets/partner-logos/apple-logo.png"
+                className="w-[150px] h-[50px] object-contain"
+              />
+              <img
+                src="assets/partner-logos/google-logo.png"
+                className="w-[150px] h-[50px] object-contain"
+              />
+              <img
+                src="assets/partner-logos/red-bull-logo.png"
+                className="w-[150px] h-[50px] object-contain"
+              />
+              <img
+                src="assets/partner-logos/maserati-logo.png"
+                className="w-[150px] h-[50px] object-contain"
+              />
+            </div>
           </div>
         </section>
 
