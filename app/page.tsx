@@ -101,6 +101,32 @@ export default function Home() {
         </section>
 
         <section id="how-it-works" className="">
+          <h2 className="text-[2em] text-center mt-[5rem] text-[#1E1F22]">
+            Get up to 15 millions ad views a day
+          </h2>
+          <p className="text-md text-center text-[#51545C]">
+            We operate the largest network of high definition digital screen
+            installed on scooters taxis and bicycles{" "}
+          </p>
+          <div className="flex justify-center mt-[5rem] gap-[80px] items-center">
+            <div className="w-[200px] h-[200px] rounded-full bg-[#FEFAFF] flex items-center justify-center p-4">
+              <img src="assets/e-bike.png" className="h-[90%] w-[90%]" />
+            </div>
+            <div className="w-[150px] h-[150px] rounded-full bg-[#FEFAFF] flex items-center justify-center p-4 relative">
+              <img src="assets/bicycle.png" className="h-[90%] w-[90%]" />
+              <div className="absolute  w-full h-full rounded-full bg-[#000000]/50 top-0 left-0 flex items-center justify-center">
+                <p className="text-white"> Launching Soon...</p>
+              </div>
+            </div>
+            <div className="w-[150px] h-[150px] rounded-full bg-[#FEFAFF] flex items-center justify-center p-4 relative">
+              <img src="assets/car.png" className="h-[90%] w-[90%]" />
+              <div className="absolute  w-full h-full rounded-full bg-[#000000]/50 top-0 left-0 flex items-center justify-center">
+                <p className="text-white"> Launching Soon...</p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section id="how-it-works" className="">
           <h2 className="text-xl text-center mt-[5rem]">How it Works?</h2>
           <div className="flex justify-between mt-[5rem]">
             <HowItWorksCard
