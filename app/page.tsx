@@ -7,24 +7,36 @@ import Link from "next/link";
 
 export default function Home() {
   return (
-    <div className="max-w-[1244px] mx-auto">
+    <div className="">
       <section>
-        <div className="flex h-[700px]  pt-5 relative">
-          <div className="absolute h-[500px] w-full  -z-10">
+        <div className="flex h-[90vh] relative">
+          <div className="absolute  h-[90vh] w-full  -z-10">
             <div className="relative">
-              <div className="bg-black opacity-60 absolute top-0 left-0 w-full h-full"></div>
-              <video autoPlay className="w-full h-[700px]">
+              {/* <div className="bg-black opacity-40 absolute top-0 left-0 w-full h-full"></div> */}
+              <div className=" absolute left-[55%]  top-[20%] bottom-[0px] right-[0px] w-full h-full">
+                <img
+                  src="3d-bike.png"
+                  className="w-[800px] h-[800px] object-contain"
+                />
+              </div>
+              <div className="w-full  h-[90vh] border-2">
+                <img
+                  src="hero-banner2.png"
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              {/* <video autoPlay className="w-full h-[700px]">
                 <source src="food-delivery-video.mp4" type="video/mp4" />
-              </video>
+              </video> */}
             </div>
           </div>
-          <div className="flex  items-center flex-col justify-center">
-            <h1 className="text-[3rem] w-[80%] text-white text-center">
+          <div className="flex  items-center flex-col w-[100%] pt-[5%]  border-1">
+            <h1 className="text-[4rem] w-[50%] text-white text-center font-thin ">
               The only out of home advertising that delivers conversions
             </h1>
-            <div className="">
+            <div className="mt-[7rem]">
               <Link href={"/drivers/#contact-us"}>
-                <CallToAction label={"let us show you how"} />
+                <CallToAction label={"Let us show you how"} />
               </Link>
             </div>
           </div>

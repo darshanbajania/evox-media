@@ -7,7 +7,7 @@ const CallToAction = ({ label, handleOnClick = () => {} }) => {
     <Button
       onClick={handleOnClick}
       radius="sm"
-      className="bg-gradient-to-r from-[#E580FF] to-[#FD80A3] text-white"
+      className="bg-gradient-to-r from-[#E580FF] to-[#FD80A3] text-white text-[20px]"
       variant="solid"
     >
       {label}

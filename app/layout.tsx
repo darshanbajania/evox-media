@@ -1,12 +1,16 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Inter, Roboto } from "next/font/google";
 import "./globals.css";
 
 import Navbar from "@/components/Navbar";
 import NextUIProviderWrapper from "@/components/providers/NextUiProviderWrapper";
 
 const inter = Inter({ subsets: ["latin"] });
-
+const roboto = Roboto({
+  style: "normal",
+  weight: ["100", "300", "400", "500", "700", "900"],
+  subsets: ["latin"],
+});
 export const metadata: Metadata = {
   title: "Evox Media",
   description: "Redefining Advertisement",
@@ -19,7 +23,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body className={roboto.className}>
         <NextUIProviderWrapper>
           <Navbar />
           {children}
