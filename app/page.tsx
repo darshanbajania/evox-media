@@ -121,7 +121,7 @@ export default function Home() {
             </h2>
             <p className="text-xl text-center text-[#51545C]">
               We operate the largest network of high definition digital screen
-              installed on scooters taxis and bicycles{" "}
+              installed on scooters, taxis and bicycles{" "}
             </p>
           </div>
           <div className="flex justify-center mt-[5rem] gap-[80px] items-center">
@@ -133,13 +133,13 @@ export default function Home() {
             </div>
             <div className="w-[180px] h-[180px] rounded-full bg-[#FEFAFF] flex items-center justify-center p-4 relative">
               <img src="assets/car.png" className="h-[90%] w-[90%]" />
-              <div className="absolute  w-full h-full rounded-full bg-[#ffffff]/30 top-0 left-0 flex items-center justify-center">
+              <div className="absolute  w-full h-full rounded-full bg-[#FEFAFF]/70 top-0 left-0 flex items-center justify-center">
                 <p className="text-black"> Launching Soon...</p>
               </div>
             </div>
             <div className="w-[180px] h-[180px] rounded-full bg-[#FEFAFF] flex items-center justify-center p-4 relative">
               <img src="assets/bicycle.png" className="h-[90%]" />
-              <div className="absolute  w-full h-full rounded-full bg-[#ffffff]/30 top-0 left-0 flex items-center justify-center">
+              <div className="absolute  w-full h-full rounded-full bg-[#FEFAFF]/70 top-0 left-0 flex items-center justify-center">
                 <p className="text-black"> Launching Soon...</p>
               </div>
             </div>
