@@ -113,28 +113,34 @@ export default function Home() {
           </div>
         </section>
 
-        <section id="how-it-works" className="">
-          <h2 className="text-[2em] text-center mt-[5rem] text-[#1E1F22]">
-            Get up to 15 millions ad views a day
-          </h2>
-          <p className="text-md text-center text-[#51545C]">
-            We operate the largest network of high definition digital screen
-            installed on scooters taxis and bicycles{" "}
-          </p>
+        <section id="how-it-works" className=" mt-[300px] mb-[300px]">
+          <div className="mt-[5rem]  mb-[5rem]">
+            <h2 className="text-[3em] text-center mt-[5rem] font-light  text-[#1E1F22]">
+              Get up to <span className="font-medium">15 million ad views</span>{" "}
+              a day
+            </h2>
+            <p className="text-xl text-center text-[#51545C]">
+              We operate the largest network of high definition digital screen
+              installed on scooters taxis and bicycles{" "}
+            </p>
+          </div>
           <div className="flex justify-center mt-[5rem] gap-[80px] items-center">
-            <div className="w-[200px] h-[200px] rounded-full bg-[#FEFAFF] flex items-center justify-center p-4">
-              <img src="assets/e-bike.png" className="h-[90%] w-[90%]" />
+            <div className="w-[300px] h-[300px] rounded-full bg-[#FEFAFF] flex items-center justify-center pr-4">
+              <img
+                src="3d-bike.png"
+                className="h-[100%] w-[100%] object-contain "
+              />
             </div>
-            <div className="w-[150px] h-[150px] rounded-full bg-[#FEFAFF] flex items-center justify-center p-4 relative">
-              <img src="assets/bicycle.png" className="h-[90%] w-[90%]" />
-              <div className="absolute  w-full h-full rounded-full bg-[#000000]/50 top-0 left-0 flex items-center justify-center">
-                <p className="text-white"> Launching Soon...</p>
+            <div className="w-[180px] h-[180px] rounded-full bg-[#FEFAFF] flex items-center justify-center p-4 relative">
+              <img src="assets/car.png" className="h-[90%] w-[90%]" />
+              <div className="absolute  w-full h-full rounded-full bg-[#ffffff]/30 top-0 left-0 flex items-center justify-center">
+                <p className="text-black"> Launching Soon...</p>
               </div>
             </div>
-            <div className="w-[150px] h-[150px] rounded-full bg-[#FEFAFF] flex items-center justify-center p-4 relative">
-              <img src="assets/car.png" className="h-[90%] w-[90%]" />
-              <div className="absolute  w-full h-full rounded-full bg-[#000000]/50 top-0 left-0 flex items-center justify-center">
-                <p className="text-white"> Launching Soon...</p>
+            <div className="w-[180px] h-[180px] rounded-full bg-[#FEFAFF] flex items-center justify-center p-4 relative">
+              <img src="assets/bicycle.png" className="h-[90%]" />
+              <div className="absolute  w-full h-full rounded-full bg-[#ffffff]/30 top-0 left-0 flex items-center justify-center">
+                <p className="text-black"> Launching Soon...</p>
               </div>
             </div>
           </div>
