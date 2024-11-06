@@ -55,55 +55,55 @@ export default function Home() {
           </div> */}
         </div>
       </section>
-      <div className="max-w-[1224px] mx-auto pt-[4rem]">
+      <div className="max-w-[90%] mx-auto pt-[8rem]">
         <section id="about-us" className="">
           <div className="flex items-center  relative h-[200px] gap-x-10">
             <div className=" pr-3 h-full  relative flex items-stretch">
               <div className="h-full border-r-0 flex items-center">
-                <h2 className="text-2xl  ">Our Supporters</h2>
+                <h2 className="text-4xl font-light">Our Supporters</h2>
               </div>
             </div>
-            <div className="w-[1px] h-full bg-slate-200" />
+            <div className="w-[2px] h-full bg-slate-200" />
             <div className="flex flex-1 flex-wrap justify-between gap-x-2 gap-y-4">
               <img
                 src="assets/partner-logos/gaston-logo.png"
-                className="w-[150px] h-[50px] object-contain"
+                className="w-[180px] h-[80px] object-contain"
               />
               <img
                 src="assets/partner-logos/jegnus-logo.png"
-                className="w-[150px] h-[50px] object-contain"
+                className="w-[180px] h-[80px] object-contain"
               />
               <img
                 src="assets/partner-logos/matru-logo.png"
-                className="w-[150px] h-[50px] object-contain"
+                className="w-[180px] h-[80px] object-contain"
               />
               <img
                 src="assets/partner-logos/spco-logo.png"
-                className="w-[150px] h-[50px] object-contain"
+                className="w-[180px] h-[80px] object-contain"
               />
               <img
                 src="assets/partner-logos/meal-tech-logo.png"
-                className="w-[150px] h-[50px] object-contain"
+                className="w-[180px] h-[80px] object-contain"
               />
               <img
                 src="assets/partner-logos/just-eat-logo.png"
-                className="w-[150px] h-[50px] object-contain"
+                className="w-[180px] h-[80px] object-contain"
               />
               <img
                 src="assets/partner-logos/bosch-logo.png"
-                className="w-[150px] h-[50px] object-contain"
+                className="w-[180px] h-[80px] object-contain"
               />
               <img
                 src="assets/partner-logos/apple-logo.png"
-                className="w-[150px] h-[50px] object-contain"
+                className="w-[180px] h-[80px] object-contain"
               />
               <img
                 src="assets/partner-logos/google-logo.png"
-                className="w-[150px] h-[50px] object-contain"
+                className="w-[180px] h-[80px] object-contain"
               />
               <img
                 src="assets/partner-logos/red-bull-logo.png"
-                className="w-[150px] h-[50px] object-contain"
+                className="w-[180px] h-[80px] object-contain"
               />
               {/* <img
                 src="assets/partner-logos/maserati-logo.png"
@@ -143,6 +143,9 @@ export default function Home() {
                 <p className="text-black"> Launching Soon...</p>
               </div>
             </div>
+          </div>
+          <div className="flex justify-center mt-[5rem]">
+            <CallToAction label={"Advertise with us "} />
           </div>
         </section>
         <section id="how-it-works" className="">
