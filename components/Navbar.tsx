@@ -60,9 +60,9 @@ const Navbar = () => {
     <NextUiNavbar
       maxWidth="full"
       position="sticky"
-      classNames={{
-        wrapper: ["max-w-[1282px]"],
-      }}
+      // classNames={{
+      //   wrapper: ["max-w-[1282px]"],
+      // }}
       onMenuOpenChange={setIsMenuOpen}
     >
       <NavbarContent>
@@ -89,11 +89,11 @@ const Navbar = () => {
             Rider Sign Up
           </Link>
         </NavbarItem>
-        <NavbarItem>
+        {/* <NavbarItem>
           <Link color="foreground" href="/#how-it-works">
             Company
           </Link>
-        </NavbarItem>
+        </NavbarItem> */}
         <NavbarItem>
           <Link color="foreground" href="/#how-it-works">
             Blogs
