@@ -56,7 +56,7 @@ export default function Home() {
         </div>
       </section>
       <div className="max-w-[90%] mx-auto pt-[8rem]">
-        <section id="about-us" className="">
+        <section id="about-us" className="max-w-[90%] mx-auto ">
           <div className="flex items-center  relative h-[200px] gap-x-10">
             <div className=" pr-3 h-full  relative flex items-stretch">
               <div className="h-full border-r-0 flex items-center">
@@ -148,6 +148,32 @@ export default function Home() {
             <CallToAction label={"Advertise with us "} />
           </div>
         </section>
+        <section id="services" className="max-w-[1440px] mx-auto">
+          <div className="flex h-[500px]  pt-5">
+            <div className="flex  flex-1 flex-col justify-center">
+              <h1 className="text-[44px] font-light w-[70%]">
+                Get upto <span className="font-medium">28 million</span> ad runs
+                a day
+              </h1>
+              <p className="text-[24px] text-[#51545C] mt-[4rem] w-[70%]">
+                Advertise your brand on our network of digital screen and reach
+                millions of your potential buyer instantaneously
+              </p>
+              <p className="text-[24px] text-[#51545C] mt-[2rem] w-[70%]">
+                Your brand travels around the city and get seen by millions of
+                people
+              </p>
+              <div className="flex-start mt-[2rem]">
+                <Link href={"/drivers/#contact-us"}>
+                  <CallToAction label={"Get Started Now"} />
+                </Link>
+              </div>
+            </div>
+            <div className="w-[50%] flex items-center justify-center">
+              <img src="3d-bike.png" className="w-[100%]" />
+            </div>
+          </div>
+        </section>
         <section id="how-it-works" className="">
           <h2 className="text-xl text-center mt-[5rem]">How it Works?</h2>
           <div className="flex justify-between mt-[5rem]">
@@ -172,7 +198,7 @@ export default function Home() {
             />
           </div>
         </section>
-        <section id="services">
+        {/* <section id="services">
           <div className="flex h-[500px]  pt-5">
             <div className="flex  flex-1 flex-col justify-center">
               <h1 className="text-xl w-[80%]">Earn Money While You Drive</h1>
@@ -191,7 +217,7 @@ export default function Home() {
               <img src="happy-delivery-person.png" className="w-[80%]" />
             </div>
           </div>
-        </section>
+        </section> */}
         <section>
           <div className="flex   mt-[3rem]">
             <div className="w-[50%] flex items-center ">
