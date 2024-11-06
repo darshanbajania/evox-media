@@ -148,6 +148,7 @@ export default function Home() {
             <CallToAction label={"Advertise with us "} />
           </div>
         </section>
+
         <section id="services" className="max-w-[1440px] mx-auto">
           <div className="flex h-[500px]  pt-5">
             <div className="flex  flex-1 flex-col justify-center">
@@ -172,6 +173,15 @@ export default function Home() {
             <div className="w-[50%] flex items-center justify-center">
               <img src="3d-bike.png" className="w-[100%]" />
             </div>
+          </div>
+        </section>
+        <section id="how-it-works" className=" mt-[300px] mb-[300px]">
+          <div className="pt-[10rem]  pb-[10rem] flex justify-center">
+            <p className="text-[#1E1F22] text-[32px] font-light text-center w-[40%]">
+              <span className="font-medium">Don’t wait</span> Don’t wait for
+              people to walk by your Ad on the banner,{" "}
+              <span className="font-medium">take your brand to them</span>
+            </p>
           </div>
         </section>
         <section id="how-it-works" className="">
