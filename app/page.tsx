@@ -55,7 +55,7 @@ export default function Home() {
           </div> */}
         </div>
       </section>
-      <div className="max-w-[90%] mx-auto pt-[8rem]">
+      <div className=" pt-[8rem]">
         <section id="about-us" className="max-w-[90%] mx-auto ">
           <div className="flex items-center  relative h-[200px] gap-x-10">
             <div className=" pr-3 h-full  relative flex items-stretch">
@@ -113,7 +113,10 @@ export default function Home() {
           </div>
         </section>
 
-        <section id="how-it-works" className=" mt-[300px] mb-[300px]">
+        <section
+          id="how-it-works"
+          className="max-w-[90%] mx-auto mt-[300px] mb-[300px]"
+        >
           <div className="mt-[5rem]  mb-[5rem]">
             <h2 className="text-[3em] text-center mt-[5rem] font-light  text-[#1E1F22]">
               Get up to <span className="font-medium">15 million ad views</span>{" "}
@@ -175,7 +178,10 @@ export default function Home() {
             </div>
           </div>
         </section>
-        <section id="how-it-works" className=" mt-[300px] mb-[300px]">
+        <section
+          id="how-it-works"
+          className="max-w-[90%] mx-auto mt-[300px] mb-[300px]"
+        >
           <div className="pt-[10rem]  pb-[10rem] flex justify-center">
             <p className="text-[#1E1F22] text-[32px] font-light text-center w-[40%]">
               <span className="font-medium">Don’t wait</span> Don’t wait for
@@ -185,7 +191,10 @@ export default function Home() {
           </div>
         </section>
         <section id="how-it-works" className="">
-          <h2 className="text-xl text-center mt-[5rem]">How it Works?</h2>
+          <h2 className="text-2xl text-center mt-[5rem]">How it Works?</h2>
+          <p className="text-xl py-2 text-center text-[#51545C] mt-4 bg-[#FEF8FF]">
+            Easy to use platform to launch and monitor your campaign successes
+          </p>
           <div className="flex justify-between mt-[5rem]">
             <HowItWorksCard
               title={"Step 1"}
