@@ -55,14 +55,15 @@ export default function Home() {
           </div> */}
         </div>
       </section>
-      <div className="max-w-[1024px] mx-auto pt-[4rem]">
+      <div className="max-w-[1224px] mx-auto pt-[4rem]">
         <section id="about-us" className="">
-          <div className="flex items-center  relative h-[200px]">
+          <div className="flex items-center  relative h-[200px] gap-x-10">
             <div className=" pr-3 h-full  relative flex items-stretch">
-              <div className="h-full border-r-1 flex items-center pr-5">
-                <h2 className="text-xl  ">Our Supporters</h2>
+              <div className="h-full border-r-0 flex items-center">
+                <h2 className="text-2xl  ">Our Supporters</h2>
               </div>
             </div>
+            <div className="w-[1px] h-full bg-slate-200" />
             <div className="flex flex-1 flex-wrap justify-between gap-x-2 gap-y-4">
               <img
                 src="assets/partner-logos/gaston-logo.png"
@@ -104,10 +105,10 @@ export default function Home() {
                 src="assets/partner-logos/red-bull-logo.png"
                 className="w-[150px] h-[50px] object-contain"
               />
-              <img
+              {/* <img
                 src="assets/partner-logos/maserati-logo.png"
                 className="w-[150px] h-[50px] object-contain"
-              />
+              /> */}
             </div>
           </div>
         </section>
