@@ -11,7 +11,7 @@ export default function Home() {
       <section>
         <div className="flex h-[90vh] relative">
           <div className="absolute  h-[90vh] w-full  -z-10">
-            <div className="relative">
+            <div className="relative overflow-hidden">
               {/* <div className="bg-black opacity-40 absolute top-0 left-0 w-full h-full"></div> */}
               <div className=" absolute left-[55%]  top-[20%] bottom-[0px] right-[0px] w-full h-full">
                 <img
