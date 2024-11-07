@@ -299,30 +299,62 @@ export default function Home() {
         </section>
         <section className="max-w-[80%] mx-auto mb-[300px]">
           <div className=" pb-[50px]">
-            <h2 className="text-3xl mb-[3rem] ">
+            <h2 className="text-3xl mb-[4rem] ">
               Pick your perfect ad-space without the hassle!
             </h2>
             <div className="flex justify-between">
-              <BenefitsCardV2
-                title={"Wide Reach"}
-                description={"Capture attention across the city"}
-                imagePath={"people-icon.png"}
-              />
-              <BenefitsCardV2
-                title={"Dynamic Displays"}
-                description={"High-definition screens for vibrant ads"}
-                imagePath={"frame.png"}
-              />
-              <BenefitsCardV2
-                title={"Cost-Effective"}
-                description={"Affordable advertising solution"}
-                imagePath={"salary-icon.png"}
-              />
-              <BenefitsCardV2
-                title={"Detailed Analytics"}
-                description={"Track and measure your campaign’s success"}
-                imagePath={"statistics-icon.png"}
-              />
+              <motion.div
+                initial={{ scale: 1 }}
+                whileHover={{ scale: 1.2 }}
+                exit={{ scale: 1.2 }}
+                transition={{ duration: 0.2, ease: "easeIn" }}
+                viewport={{ margin: "-100px" }}
+              >
+                <BenefitsCardV2
+                  title={"Wide Reach"}
+                  description={"Capture attention across the city"}
+                  imagePath={"people-icon.png"}
+                />
+              </motion.div>
+              <motion.div
+                initial={{ scale: 1 }}
+                whileHover={{ scale: 1.2 }}
+                exit={{ scale: 1.2 }}
+                transition={{ duration: 0.2, ease: "easeIn" }}
+                viewport={{ margin: "-100px" }}
+              >
+                <BenefitsCardV2
+                  title={"Dynamic Displays"}
+                  description={"High-definition screens for vibrant ads"}
+                  imagePath={"frame.png"}
+                />
+              </motion.div>
+              <motion.div
+                initial={{ scale: 1 }}
+                whileHover={{ scale: 1.2 }}
+                exit={{ scale: 1.2 }}
+                transition={{ duration: 0.2, ease: "easeIn" }}
+                viewport={{ margin: "-100px" }}
+              >
+                <BenefitsCardV2
+                  title={"Cost-Effective"}
+                  description={"Affordable advertising solution"}
+                  imagePath={"salary-icon.png"}
+                />
+              </motion.div>
+              <motion.div
+                initial={{ scale: 1 }}
+                whileHover={{ scale: 1.2 }}
+                exit={{ scale: 1.2 }}
+                transition={{ duration: 0.2, ease: "easeIn" }}
+                viewport={{ margin: "-100px" }}
+              >
+                <BenefitsCardV2
+                  title={"Detailed Analytics"}
+                  description={"Track and measure your campaign’s success"}
+                  imagePath={"statistics-icon.png"}
+                />
+              </motion.div>
             </div>
           </div>
         </section>
