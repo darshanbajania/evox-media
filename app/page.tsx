@@ -1,5 +1,6 @@
 import CallToAction from "@/components/CallToAction";
 import Navbar from "@/components/Navbar";
+import HowItWorksCardV2 from "@/components/advertisersPage/HowItWorksCardV2";
 import HowItWorksCard from "@/components/homePage/HowItWorksCard";
 import ReviewCard from "@/components/homePage/ReviewCard";
 import Image from "next/image";
@@ -190,30 +191,30 @@ export default function Home() {
             </p>
           </div>
         </section>
-        <section id="how-it-works" className="">
-          <h2 className="text-2xl text-center mt-[5rem]">How it Works?</h2>
-          <p className="text-xl py-2 text-center text-[#51545C] mt-4 bg-[#FEF8FF]">
+        <section id="how-it-works" className="mb-[300px]">
+          <h2 className="text-3xl text-center mt-[5rem] ">How it Works?</h2>
+          <p className="text-2xl py-2 text-center text-[#51545C] mt-[2rem] bg-[#FEF8FF]">
             Easy to use platform to launch and monitor your campaign successes
           </p>
-          <div className="flex justify-between mt-[5rem]">
-            <HowItWorksCard
-              title={"Step 1"}
-              description={
-                "Easily attach our innovative delivery box to your vehicle"
-              }
-              imagePath={"delivery-box-rack-for-bike.png"}
+
+          <div className=" flex justify-center gap-[5rem] mt-[5rem]">
+            <HowItWorksCardV2
+              title={"Upload your campaign and schedule"}
+              description={"Upload still or motion ads on the platform"}
+              imagePath={"uploadCampaigns.png"}
             />
-            <HowItWorksCard
-              title={"Step 2"}
+            <HowItWorksCardV2
+              title={"Target your viewers in specific region"}
               description={
-                "Dynamic ads play on screens, reaching a wide audience as you drive."
+                "Create/Select as many sons as you like where you want your ad to run"
               }
-              imagePath={"evox-bike-2.png"}
+              imagePath={"target-viewers.png"}
             />
-            <HowItWorksCard
-              title={"Step 3"}
-              description={"Get paid for driving and advertising."}
-              imagePath={"giving-payment.png"}
+            <HowItWorksCardV2
+              title={`That’s it !
+  You are live`}
+              description={"Monitor the results of your campaign success live"}
+              imagePath={"dashboard.png"}
             />
           </div>
         </section>
