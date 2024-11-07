@@ -248,7 +248,7 @@ export default function Home() {
             </div>
           </div>
         </section>
-        <section id="how-it-works" className="mb-[300px]">
+        <section id="how-it-works" className="mb-[100px]">
           <h2 className="text-3xl text-center mt-[5rem] mb-[3rem] ">
             The Tech Bit
           </h2>
@@ -337,7 +337,7 @@ export default function Home() {
             </div>
           </div>
         </section> */}
-        <section>
+        {/* <section>
           <div className="flex   mt-[3rem]">
             <div className="w-[50%] flex items-center ">
               <img src="delivery-box-advertisement-2.png" className="w-[60%]" />
@@ -356,8 +356,9 @@ export default function Home() {
               </div>
             </div>
           </div>
-        </section>
-        <section className="mt-[5rem]">
+        </section> */}
+
+        {/* <section className="mt-[5rem]">
           <h2 className="text-xl mb-[3rem] text-center">
             What Our Clients Say
           </h2>
@@ -375,8 +376,8 @@ export default function Home() {
               author="Happy Driver"
             />
           </div>
-        </section>
-        <section>
+        </section> */}
+        {/* <section>
           <div className="flex h-[500px]  pt-5">
             <div className="flex  flex-1 flex-col justify-center">
               <h1 className="text-xl w-[80%]">
@@ -394,8 +395,19 @@ export default function Home() {
               </div>
             </div>
             <div className="w-[50%] flex items-center justify-center">
-              {/* <img src="happy-delivery-person.png" className="w-[80%]" /> */}
+              <img src="happy-delivery-person.png" className="w-[80%]" /> 
             </div>
+          </div>
+        </section> */}
+        <section
+          id="how-it-works"
+          className="max-w-[90%] mx-auto mt-[200px] mb-[200px]"
+        >
+          <div className="pt-[10rem]  pb-[10rem] flex flex-col items-center justify-center">
+            <p className="text-[#1E1F22] text-[32px] font-light text-center w-[40%] mb-[2rem]">
+              Get seen by <span className="font-medium">millions</span> today
+            </p>
+            <CallToAction label={"Get Started Today"} />
           </div>
         </section>
       </div>
