@@ -6,6 +6,7 @@ import HowItWorksCard from "@/components/homePage/HowItWorksCard";
 import ReviewCard from "@/components/homePage/ReviewCard";
 import Image from "next/image";
 import Link from "next/link";
+import Marquee from "react-fast-marquee";
 
 export default function Home() {
   return (
@@ -401,7 +402,7 @@ export default function Home() {
         </section> */}
         <section
           id="how-it-works"
-          className="max-w-[90%] mx-auto mt-[200px] mb-[200px]"
+          className="max-w-[90%] mx-auto mt-[200px] mb-[150px]"
         >
           <div className="pt-[10rem]  pb-[10rem] flex flex-col items-center justify-center">
             <p className="text-[#1E1F22] text-[32px] font-light text-center w-[40%] mb-[2rem]">
@@ -409,6 +410,50 @@ export default function Home() {
             </p>
             <CallToAction label={"Get Started Today"} />
           </div>
+        </section>
+        <section id="how-it-works" className=" w-[100%]  mb-[50px]">
+          <Marquee speed={150} pauseOnClick gradient>
+            <img
+              src="assets/partner-logos/gaston-logo.png"
+              className="w-[180px] h-[80px] object-contain mr-[5rem]"
+            />
+            <img
+              src="assets/partner-logos/jegnus-logo.png"
+              className="w-[180px] h-[80px] object-contain mr-[5rem]"
+            />
+            <img
+              src="assets/partner-logos/matru-logo.png"
+              className="w-[180px] h-[80px] object-contain mr-[5rem]"
+            />
+            <img
+              src="assets/partner-logos/spco-logo.png"
+              className="w-[180px] h-[80px] object-contain mr-[5rem]"
+            />
+            <img
+              src="assets/partner-logos/meal-tech-logo.png"
+              className="w-[180px] h-[80px] object-contain mr-[5rem]"
+            />
+            <img
+              src="assets/partner-logos/just-eat-logo.png"
+              className="w-[180px] h-[80px] object-contain mr-[5rem]"
+            />
+            <img
+              src="assets/partner-logos/bosch-logo.png"
+              className="w-[180px] h-[80px] object-contain mr-[5rem]"
+            />
+            <img
+              src="assets/partner-logos/apple-logo.png"
+              className="w-[180px] h-[80px] object-contain mr-[5rem]"
+            />
+            <img
+              src="assets/partner-logos/google-logo.png"
+              className="w-[180px] h-[80px] object-contain mr-[5rem]"
+            />
+            <img
+              src="assets/partner-logos/red-bull-logo.png"
+              className="w-[180px] h-[80px] object-contain mr-[5rem]"
+            />
+          </Marquee>
         </section>
       </div>
     </div>
