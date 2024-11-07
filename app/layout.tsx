@@ -28,21 +28,56 @@ export default function RootLayout({
           <Navbar />
           {children}
           <footer>
-            <div className=" max-w-[1244px] mx-auto flex h-[250px] bg-[#F7F8F9]">
-              <div className="w-[50%] flex items-center justify-center">
-                <h2 className="text-2xl ">
-                  Evox Media | Revolutionizing Mobile Advertising
-                </h2>
-              </div>
-              <div className="w-[50%] flex items-center flex-col justify-center py-2">
-                <p className="text-xl">info@evoxmedia.com</p>
-                <p className="text-xl">Phone: (123) 456-7890</p>
-                <div className="flex justify-between w-[30%] my-[2rem]">
-                  <img src="instagram-logo.png" className="w-[30px] h-[30px]" />
-                  <img src="facebook-logo.png" className="w-[30px] h-[30px]" />
-                  <img src="linkedin-logo.png" className="w-[30px] h-[30px]" />
+            <div className="  flex h-[320px] bg-[#FEF9FF]">
+              <div className="w-[90%] mx-auto flex items-center justify-center">
+                <div className="w-[50%] ">
+                  <div className="w-[80%]">
+                    <h2 className="text-2xl font-medium">About Us</h2>
+                    <p className="text-lg">
+                      We are a brand new OOH advertising company with a unique
+                      concept of allowing advertisers to deliver hyper-local
+                      campaigns and reach millions of consumers instantly. We
+                      operate a fleet of screens that are equipped with some of
+                      the most advanced technologies allowing you to flexibly
+                      run your ad campaigns as well as track the performance in
+                      real-time.
+                      <br></br>
+                      <br></br>
+                      The future of OOH is here now!
+                    </p>
+                  </div>
                 </div>
-                <p className="text-xl">Privacy Policy | Terms of Service</p>
+                <div className="w-[50%] flex items-center flex-col justify-center py-2">
+                  <p className="text-xl">hello@evox.media</p>
+                  <p className="text-xl">Phone: +44 03330 500911</p>
+                  <div className="flex justify-between w-[30%] my-[2rem]">
+                    <a href="https://x.com/evoxmedia_" target="_blank">
+                      <img
+                        src="instagram-logo.png"
+                        className="w-[30px] h-[30px]"
+                      />
+                    </a>
+                    <a
+                      href="https://www.facebook.com/people/EvoxMedia/61562484713101/"
+                      target="_blank"
+                    >
+                      <img
+                        src="facebook-logo.png"
+                        className="w-[30px] h-[30px]"
+                      />
+                    </a>
+                    <a
+                      href="https://www.linkedin.com/company/evoxmedia"
+                      target="_blank"
+                    >
+                      <img
+                        src="linkedin-logo.png"
+                        className="w-[30px] h-[30px]"
+                      />
+                    </a>
+                  </div>
+                  <p className="text-xl">Privacy Policy | Terms of Service</p>
+                </div>
               </div>
             </div>
           </footer>
