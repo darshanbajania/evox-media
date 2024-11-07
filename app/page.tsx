@@ -1,5 +1,6 @@
 import CallToAction from "@/components/CallToAction";
 import Navbar from "@/components/Navbar";
+import BenefitsCardV2 from "@/components/advertisersPage/BenefitsCardV2";
 import HowItWorksCardV2 from "@/components/advertisersPage/HowItWorksCardV2";
 import HowItWorksCard from "@/components/homePage/HowItWorksCard";
 import ReviewCard from "@/components/homePage/ReviewCard";
@@ -216,6 +217,35 @@ export default function Home() {
               description={"Monitor the results of your campaign success live"}
               imagePath={"dashboard.png"}
             />
+          </div>
+        </section>
+        <section className="max-w-[80%] mx-auto">
+          <div className=" pb-[50px]">
+            <h2 className="text-3xl mb-[3rem] ">
+              Pick your perfect ad-space without the hassle!
+            </h2>
+            <div className="flex justify-between">
+              <BenefitsCardV2
+                title={"Wide Reach"}
+                description={"Capture attention across the city"}
+                imagePath={"people-icon.png"}
+              />
+              <BenefitsCardV2
+                title={"Dynamic Displays"}
+                description={"High-definition screens for vibrant ads"}
+                imagePath={"frame.png"}
+              />
+              <BenefitsCardV2
+                title={"Cost-Effective"}
+                description={"Affordable advertising solution"}
+                imagePath={"salary-icon.png"}
+              />
+              <BenefitsCardV2
+                title={"Detailed Analytics"}
+                description={"Track and measure your campaign’s success"}
+                imagePath={"statistics-icon.png"}
+              />
+            </div>
           </div>
         </section>
         {/* <section id="services">
