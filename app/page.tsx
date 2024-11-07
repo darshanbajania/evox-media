@@ -6,6 +6,7 @@ import HowItWorksCard from "@/components/homePage/HowItWorksCard";
 import ReviewCard from "@/components/homePage/ReviewCard";
 import Image from "next/image";
 import Link from "next/link";
+import { useRouter } from "next/navigation";
 import Marquee from "react-fast-marquee";
 
 export default function Home() {
@@ -408,7 +409,9 @@ export default function Home() {
             <p className="text-[#1E1F22] text-[32px] font-light text-center w-[40%] mb-[2rem]">
               Get seen by <span className="font-medium">millions</span> today
             </p>
-            <CallToAction label={"Get Started Today"} />
+            <a href="https://forms.gle/b29CLTnPZAxxd8XQ9" target="_blank">
+              <CallToAction label={"Get Started Today"} />
+            </a>
           </div>
         </section>
         <section id="how-it-works" className=" w-[100%]  mb-[50px]">
