@@ -138,7 +138,7 @@ export default function Home() {
               initial={{ translateY: 50, opacity: 0 }}
               whileInView={{ translateY: 0, opacity: 1 }}
               exit={{ translateY: 0, opacity: 1 }}
-              transition={{ duration: 0.5 }}
+              transition={{ duration: 0.5, ease: "easeIn" }}
               // viewport={{ margin: "-150px" }}
               className="w-[300px] h-[300px] rounded-full bg-[#FEFAFF] flex items-center justify-center pr-4"
             >
@@ -151,7 +151,7 @@ export default function Home() {
               initial={{ translateY: 50, opacity: 0 }}
               whileInView={{ translateY: 0, opacity: 1 }}
               exit={{ translateY: 0, opacity: 1 }}
-              transition={{ duration: 0.5 }}
+              transition={{ duration: 0.5, ease: "easeIn" }}
               className="w-[180px] h-[180px] rounded-full bg-[#FEFAFF] flex items-center justify-center p-4 relative"
             >
               <img src="assets/car.png" className="h-[90%] w-[90%]" />
@@ -163,7 +163,7 @@ export default function Home() {
               initial={{ translateY: 50, opacity: 0 }}
               whileInView={{ translateY: 0, opacity: 1 }}
               exit={{ translateY: 0, opacity: 1 }}
-              transition={{ duration: 0.5 }}
+              transition={{ duration: 0.5, ease: "easeIn" }}
               className="w-[180px] h-[180px] rounded-full bg-[#FEFAFF] flex items-center justify-center p-4 relative"
             >
               <img src="assets/bicycle.png" className="h-[90%]" />
