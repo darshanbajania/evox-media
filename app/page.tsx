@@ -251,24 +251,50 @@ export default function Home() {
           </p>
 
           <div className=" flex justify-center gap-[5rem] mt-[5rem]">
-            <HowItWorksCardV2
-              title={"Upload your campaign and schedule"}
-              description={"Upload still or motion ads on the platform"}
-              imagePath={"uploadCampaigns.png"}
-            />
-            <HowItWorksCardV2
-              title={"Target your viewers in specific region"}
-              description={
-                "Create/Select as many sons as you like where you want your ad to run"
-              }
-              imagePath={"target-viewers.png"}
-            />
-            <HowItWorksCardV2
-              title={`That’s it !
+            <motion.div
+              initial={{ translateY: 50, opacity: 0 }}
+              whileInView={{ translateY: 0, opacity: 1 }}
+              exit={{ translateY: 0, opacity: 1 }}
+              transition={{ duration: 0.5, ease: "easeIn" }}
+              viewport={{ margin: "-100px" }}
+            >
+              <HowItWorksCardV2
+                title={"Upload your campaign and schedule"}
+                description={"Upload still or motion ads on the platform"}
+                imagePath={"uploadCampaigns.png"}
+              />
+            </motion.div>
+            <motion.div
+              initial={{ translateY: 50, opacity: 0 }}
+              whileInView={{ translateY: 0, opacity: 1 }}
+              exit={{ translateY: 0, opacity: 1 }}
+              transition={{ duration: 0.5, ease: "easeIn" }}
+              viewport={{ margin: "-100px" }}
+            >
+              <HowItWorksCardV2
+                title={"Target your viewers in specific region"}
+                description={
+                  "Create/Select as many sons as you like where you want your ad to run"
+                }
+                imagePath={"target-viewers.png"}
+              />
+            </motion.div>
+            <motion.div
+              initial={{ translateY: 50, opacity: 0 }}
+              whileInView={{ translateY: 0, opacity: 1 }}
+              exit={{ translateY: 0, opacity: 1 }}
+              transition={{ duration: 0.5, ease: "easeIn" }}
+              viewport={{ margin: "-100px" }}
+            >
+              <HowItWorksCardV2
+                title={`That’s it !
   You are live`}
-              description={"Monitor the results of your campaign success live"}
-              imagePath={"dashboard.png"}
-            />
+                description={
+                  "Monitor the results of your campaign success live"
+                }
+                imagePath={"dashboard.png"}
+              />
+            </motion.div>
           </div>
         </section>
         <section className="max-w-[80%] mx-auto mb-[300px]">
