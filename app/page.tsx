@@ -187,7 +187,14 @@ export default function Home() {
 
         <section id="services" className="max-w-[1440px] mx-auto">
           <div className="flex h-[500px]  pt-5">
-            <div className="flex  flex-1 flex-col justify-center">
+            <motion.div
+              initial={{ translateX: -100, opacity: 0 }}
+              whileInView={{ translateX: 0, opacity: 1 }}
+              exit={{ translateX: 0, opacity: 1 }}
+              transition={{ duration: 0.5, ease: "easeIn" }}
+              viewport={{ margin: "-50px" }}
+              className="flex  flex-1 flex-col justify-center"
+            >
               <h1 className="text-[44px] font-light w-[70%]">
                 Get upto <span className="font-medium">28 million</span> ad runs
                 a day
@@ -205,10 +212,17 @@ export default function Home() {
                   <CallToAction label={"Get Started Now"} />
                 </Link>
               </div>
-            </div>
-            <div className="w-[50%] flex items-center justify-center">
+            </motion.div>
+            <motion.div
+              initial={{ translateX: 150, opacity: 0 }}
+              whileInView={{ translateX: 0, opacity: 1 }}
+              exit={{ translateX: 0, opacity: 1 }}
+              transition={{ duration: 0.5, ease: "easeIn" }}
+              viewport={{ margin: "-50px" }}
+              className="w-[50%] flex items-center justify-center"
+            >
               <img src="3d-bike.png" className="w-[100%]" />
-            </div>
+            </motion.div>
           </div>
         </section>
         <section
