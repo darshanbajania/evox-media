@@ -39,7 +39,7 @@ export default function Home() {
               The only out of home advertising that delivers conversions
             </h1>
             <div className="mt-[7rem]">
-              <Link href={"/drivers/#contact-us"}>
+              <Link href={"#our-supporters"}>
                 <CallToAction label={"Let us show you how"} />
               </Link>
             </div>
@@ -60,7 +60,7 @@ export default function Home() {
         </div>
       </section>
       <div className=" pt-[8rem]">
-        <section id="about-us" className="max-w-[90%] mx-auto ">
+        <section id="our-supporters" className="max-w-[90%] mx-auto ">
           <div className="flex items-center  relative h-[200px] gap-x-10">
             <div className=" pr-3 h-full  relative flex items-stretch">
               <div className="h-full border-r-0 flex items-center">
@@ -118,7 +118,7 @@ export default function Home() {
         </section>
 
         <section
-          id="how-it-works"
+          id="fleet-section"
           className="max-w-[90%] mx-auto mt-[300px] mb-[300px]"
         >
           <div className="mt-[5rem]  mb-[5rem]">
@@ -152,7 +152,9 @@ export default function Home() {
             </div>
           </div>
           <div className="flex justify-center mt-[5rem]">
-            <CallToAction label={"Advertise with us "} />
+            <a href="https://forms.gle/b29CLTnPZAxxd8XQ9" target="_blank">
+              <CallToAction label={"Advertise with us "} />
+            </a>
           </div>
         </section>
 
@@ -172,7 +174,7 @@ export default function Home() {
                 people
               </p>
               <div className="flex-start mt-[2rem]">
-                <Link href={"/drivers/#contact-us"}>
+                <Link href={"https://forms.gle/b29CLTnPZAxxd8XQ9"}>
                   <CallToAction label={"Get Started Now"} />
                 </Link>
               </div>

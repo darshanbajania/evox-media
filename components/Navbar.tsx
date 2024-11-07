@@ -128,12 +128,9 @@ const Navbar = () => {
         </NavbarItem> */}
       </NavbarContent>
       <NavbarContent justify="end">
-        <CallToAction
-          handleOnClick={() => {
-            router.push("/for-advertisers/#contact-us");
-          }}
-          label={"Advertise With Us"}
-        />
+        <a href="https://forms.gle/b29CLTnPZAxxd8XQ9" target="_blank">
+          <CallToAction label={"Advertise With Us"} />
+        </a>
       </NavbarContent>
       <NavbarMenu>
         {menuItems.map((item, index) => (
