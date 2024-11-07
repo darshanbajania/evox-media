@@ -1,9 +1,11 @@
+"use client";
 import CallToAction from "@/components/CallToAction";
 import Navbar from "@/components/Navbar";
 import BenefitsCardV2 from "@/components/advertisersPage/BenefitsCardV2";
 import HowItWorksCardV2 from "@/components/advertisersPage/HowItWorksCardV2";
 import HowItWorksCard from "@/components/homePage/HowItWorksCard";
 import ReviewCard from "@/components/homePage/ReviewCard";
+import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
@@ -132,30 +134,55 @@ export default function Home() {
             </p>
           </div>
           <div className="flex justify-center mt-[5rem] gap-[80px] items-center">
-            <div className="w-[300px] h-[300px] rounded-full bg-[#FEFAFF] flex items-center justify-center pr-4">
+            <motion.div
+              initial={{ translateY: 50, opacity: 0 }}
+              whileInView={{ translateY: 0, opacity: 1 }}
+              exit={{ translateY: 0, opacity: 1 }}
+              transition={{ duration: 0.5 }}
+              // viewport={{ margin: "-150px" }}
+              className="w-[300px] h-[300px] rounded-full bg-[#FEFAFF] flex items-center justify-center pr-4"
+            >
               <img
                 src="3d-bike.png"
                 className="h-[100%] w-[100%] object-contain "
               />
-            </div>
-            <div className="w-[180px] h-[180px] rounded-full bg-[#FEFAFF] flex items-center justify-center p-4 relative">
+            </motion.div>
+            <motion.div
+              initial={{ translateY: 50, opacity: 0 }}
+              whileInView={{ translateY: 0, opacity: 1 }}
+              exit={{ translateY: 0, opacity: 1 }}
+              transition={{ duration: 0.5 }}
+              className="w-[180px] h-[180px] rounded-full bg-[#FEFAFF] flex items-center justify-center p-4 relative"
+            >
               <img src="assets/car.png" className="h-[90%] w-[90%]" />
               <div className="absolute  w-full h-full rounded-full bg-[#FEFAFF]/70 top-0 left-0 flex items-center justify-center">
                 <p className="text-black"> Launching Soon...</p>
               </div>
-            </div>
-            <div className="w-[180px] h-[180px] rounded-full bg-[#FEFAFF] flex items-center justify-center p-4 relative">
+            </motion.div>
+            <motion.div
+              initial={{ translateY: 50, opacity: 0 }}
+              whileInView={{ translateY: 0, opacity: 1 }}
+              exit={{ translateY: 0, opacity: 1 }}
+              transition={{ duration: 0.5 }}
+              className="w-[180px] h-[180px] rounded-full bg-[#FEFAFF] flex items-center justify-center p-4 relative"
+            >
               <img src="assets/bicycle.png" className="h-[90%]" />
               <div className="absolute  w-full h-full rounded-full bg-[#FEFAFF]/70 top-0 left-0 flex items-center justify-center">
                 <p className="text-black"> Launching Soon...</p>
               </div>
-            </div>
+            </motion.div>
           </div>
-          <div className="flex justify-center mt-[5rem]">
+          <motion.div
+            // initial={{ translateY: 50, opacity: 0 }}
+            // whileInView={{ translateY: 0, opacity: 1 }}
+            // exit={{ translateY: 0, opacity: 1 }}
+            // viewport={{ margin: "-50px" }}
+            className="flex justify-center mt-[5rem]"
+          >
             <a href="https://forms.gle/b29CLTnPZAxxd8XQ9" target="_blank">
               <CallToAction label={"Advertise with us "} />
             </a>
-          </div>
+          </motion.div>
         </section>
 
         <section id="services" className="max-w-[1440px] mx-auto">
