@@ -402,7 +402,7 @@ export default function Home() {
         </section> */}
         <section
           id="how-it-works"
-          className="max-w-[90%] mx-auto mt-[200px] mb-[150px]"
+          className="max-w-[90%] mx-auto mt-[200px] mb-[180px]"
         >
           <div className="pt-[10rem]  pb-[10rem] flex flex-col items-center justify-center">
             <p className="text-[#1E1F22] text-[32px] font-light text-center w-[40%] mb-[2rem]">
