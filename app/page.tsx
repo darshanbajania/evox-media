@@ -192,7 +192,7 @@ export default function Home() {
               whileInView={{ translateX: 0, opacity: 1 }}
               exit={{ translateX: 0, opacity: 1 }}
               transition={{ duration: 0.5, ease: "easeIn" }}
-              viewport={{ margin: "-50px" }}
+              viewport={{ margin: "-400px" }}
               className="flex  flex-1 flex-col justify-center"
             >
               <h1 className="text-[44px] font-light w-[70%]">
@@ -218,7 +218,7 @@ export default function Home() {
               whileInView={{ translateX: 0, opacity: 1 }}
               exit={{ translateX: 0, opacity: 1 }}
               transition={{ duration: 0.5, ease: "easeIn" }}
-              viewport={{ margin: "-50px" }}
+              viewport={{ margin: "-400px" }}
               className="w-[50%] flex items-center justify-center"
             >
               <img src="3d-bike.png" className="w-[100%]" />
@@ -229,13 +229,20 @@ export default function Home() {
           id="how-it-works"
           className="max-w-[90%] mx-auto mt-[300px] mb-[300px]"
         >
-          <div className="pt-[10rem]  pb-[10rem] flex justify-center">
+          <motion.div
+            initial={{ translateY: 150, opacity: 0 }}
+            whileInView={{ translateY: 0, opacity: 1 }}
+            exit={{ translateY: 0, opacity: 1 }}
+            transition={{ duration: 0.5, ease: "easeIn" }}
+            viewport={{ margin: "-100px" }}
+            className="pt-[10rem]  pb-[10rem] flex justify-center"
+          >
             <p className="text-[#1E1F22] text-[32px] font-light text-center w-[40%]">
               <span className="font-medium">Don’t wait</span> for people to walk
               by your Ad on the banner,{" "}
               <span className="font-medium">take your brand to them</span>
             </p>
-          </div>
+          </motion.div>
         </section>
         <section id="how-it-works" className="mb-[300px]">
           <h2 className="text-3xl text-center mt-[5rem] ">How it Works?</h2>
