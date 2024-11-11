@@ -335,6 +335,34 @@ const page = () => {
           />
         </Marquee>
       </section>
+      <section id="contact-us" className="mt-[200px] mb-[100px]">
+        <h2 className="text-[2rem] mb-[2rem] text-center">
+          Still have more questions?
+        </h2>
+        <div className="flex justify-center items-center gap-5 ">
+          <a>
+            <CallToAction label={"Sign Up Now"} />
+          </a>
+          <div className="h-[30px] w-[1px] bg-[#E5E6E9]" />
+          <div className="flex flex-col justify-center  ">
+            <button>
+              <img
+                src="chatbot.png"
+                className="w-[50px] h-[50px] object-contain"
+              />
+            </button>
+          </div>
+        </div>
+        {/* <div className="border-1  border-[#EBE1F2] w-[50%] p-5 mx-auto rounded-lg">
+          <FormField label="Full Name" id={"full-name"} />
+          <FormField label="Email Address" id={"email-address"} />
+          <FormField label="Phone Number" id={"phone-number"} />
+          <FormField label="Message" id={"message"} variant={"text-area"} />
+          <div className="flex justify-center mt-[2rem]">
+            <CallToAction label={"Send Message"} />
+          </div>
+        </div> */}
+      </section>
     </div>
   );
 };
