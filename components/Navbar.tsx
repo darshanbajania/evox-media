@@ -85,7 +85,7 @@ const Navbar = () => {
           </Link>
         </NavbarItem>
         <NavbarItem>
-          <Link color="foreground" href="/#how-it-works">
+          <Link color="foreground" href="/drivers">
             Rider Sign Up
           </Link>
         </NavbarItem>
@@ -95,7 +95,7 @@ const Navbar = () => {
           </Link>
         </NavbarItem> */}
         <NavbarItem>
-          <Link color="foreground" href="/#how-it-works">
+          <Link color="foreground" href="/blogs">
             Blogs
           </Link>
         </NavbarItem>
