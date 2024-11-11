@@ -11,10 +11,11 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Marquee from "react-fast-marquee";
+import { useRouter } from "next/router";
 
 // import Swiper JS
 
-const page = () => {
+const DriversPage = () => {
   let sliderRef = useRef(null);
   const next = () => {
     sliderRef.slickNext();
@@ -46,7 +47,9 @@ const page = () => {
                 Turn Your Daily Routes into a Revenue Stream with Evox Media
               </p>
               <div className="flex-start mt-[2rem]">
-                <CallToAction label={"Join Our Driver Network"} />
+                <a href="https://forms.gle/58BrfTxd9Vk8RnrLA" target="_blank">
+                  <CallToAction label={"Join Our Driver Network"} />
+                </a>
               </div>
             </div>
           </div>
@@ -279,7 +282,9 @@ const page = () => {
       <section id="contact-us" className="my-[200px]">
         <h2 className="text-[2rem] mb-[2rem] text-center">Join Us Today</h2>
         <div className="flex justify-center">
-          <CallToAction label={"Sign Up Now"} />
+          <a href="https://forms.gle/58BrfTxd9Vk8RnrLA" target="_blank">
+            <CallToAction label={"Sign Up Now"} />
+          </a>
         </div>
         {/* <div className="border-1  border-[#EBE1F2] w-[50%] p-5 mx-auto rounded-lg">
           <FormField label="Full Name" id={"full-name"} />
@@ -340,7 +345,7 @@ const page = () => {
           Still have more questions?
         </h2>
         <div className="flex justify-center items-center gap-5 ">
-          <a>
+          <a href="https://forms.gle/58BrfTxd9Vk8RnrLA" target="_blank">
             <CallToAction label={"Sign Up Now"} />
           </a>
           <div className="h-[30px] w-[1px] bg-[#E5E6E9]" />
@@ -367,4 +372,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default DriversPage;
