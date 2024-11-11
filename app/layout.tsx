@@ -82,6 +82,13 @@ export default function RootLayout({
             </div>
           </footer>
         </NextUIProviderWrapper>
+        <script
+          id="messenger-widget-b"
+          src="https://cdn.botpenguin.com/website-bot.js"
+          defer
+        >
+          67324af63550526a802cce75,67324ac21db6dc41404745ba
+        </script>
       </body>
     </html>
   );
