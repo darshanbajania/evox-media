@@ -46,3 +46,15 @@ body,
   height: 100%;
   width: 100%;
 }
+
+.slider-container {
+  width: 440px;
+  height: 200px;
+  margin: auto;
+}
+
+.slider-card {
+  width: 440px;
+  height: 200px;
+  padding: 0 20px;
+}

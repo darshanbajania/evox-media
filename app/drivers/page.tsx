@@ -1,12 +1,33 @@
+"use client";
 import CallToAction from "@/components/CallToAction";
 import FormField from "@/components/FormField";
 import BenefitsCard from "@/components/driversPage/BenefitsCard";
 import HowItWorksCard from "@/components/driversPage/HowItWorksCard";
-import ReviewCard from "@/components/homePage/ReviewCard";
-import React from "react";
+import ReviewCard from "@/components/driversPage/ReviewCard";
+import React, { useRef } from "react";
 import Link from "next/link";
 import HowItWorksCardV2 from "@/components/driversPage/HowItWorksCardV2";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+
+// import Swiper JS
+
 const page = () => {
+  let sliderRef = useRef(null);
+  const next = () => {
+    sliderRef.slickNext();
+  };
+  const previous = () => {
+    sliderRef.slickPrev();
+  };
+  var settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+  };
   return (
     <div className="">
       <section className="">
@@ -159,7 +180,7 @@ const page = () => {
           />
         </div>
       </section>
-      <section className="mt-[5rem]">
+      {/* <section className="mt-[5rem]">
         <h2 className="text-xl mb-[3rem] text-center">What Our Clients Say</h2>
         <div className="mt-5 flex justify-around  ">
           <ReviewCard
@@ -174,6 +195,84 @@ const page = () => {
             }
             author="Jamie S."
           />
+        </div>
+      </section> */}
+
+      <section className="my-[200px]">
+        <h2 className="text-[1.5rem] mb-[5rem] text-center ">
+          What other riders say
+        </h2>
+        <div className="slider-container relative">
+          <Slider
+            ref={(slider) => {
+              sliderRef = slider;
+            }}
+            {...settings}
+          >
+            <ReviewCard
+              author={"Alex"}
+              designation={"Rider"}
+              review={`Evox Media has made it so easy to earn extra income. I just drive
+              my usual routes and get paid!`}
+            />
+            <ReviewCard
+              author={"Alex"}
+              designation={"Rider"}
+              review={`Evox Media has made it so easy to earn extra income. I just drive
+              my usual routes and get paid!`}
+            />
+            <ReviewCard
+              author={"Alex"}
+              designation={"Rider"}
+              review={`Evox Media has made it so easy to earn extra income. I just drive
+              my usual routes and get paid!`}
+            />
+          </Slider>
+
+          <div className="absolute top-0 -left-[200px] h-[100%] w-[200px]   flex flex-col justify-center items-center">
+            <button
+              className="button bg-[#FD80A3] rounded-full "
+              onClick={previous}
+            >
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M15 18L9 12L15 6"
+                  stroke="white"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </button>
+          </div>
+          <div className="absolute top-0 -right-[200px] h-[100%] w-[200px]  flex flex-col justify-center items-center">
+            <button
+              className="button  bg-[#FD80A3] rounded-full "
+              onClick={next}
+            >
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M9 6L15 12L9 18"
+                  stroke="white"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </button>
+          </div>
         </div>
       </section>
       <section id="contact-us" className="mt-[5rem] mb-[3rem]">
