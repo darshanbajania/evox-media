@@ -5,6 +5,7 @@ import HowItWorksCard from "@/components/driversPage/HowItWorksCard";
 import ReviewCard from "@/components/homePage/ReviewCard";
 import React from "react";
 import Link from "next/link";
+import HowItWorksCardV2 from "@/components/driversPage/HowItWorksCardV2";
 const page = () => {
   return (
     <div className="">
@@ -79,7 +80,7 @@ const page = () => {
           </div>
         </div>
       </section> */}
-      <section>
+      {/* <section>
         <div className="pt-[100px] pb-[50px]">
           <h2 className="text-xl mb-[2rem] text-center">
             Why Drive with Evox Media?
@@ -103,28 +104,58 @@ const page = () => {
             />
           </div>
         </div>
-      </section>
+      </section> */}
       <section className="mt-[5rem]">
-        <h2 className="text-xl text-center">How it Works?</h2>
-        <div className="flex justify-between mt-[5rem]">
-          <HowItWorksCard
-            title={"Step 1"}
+        {/* <h2 className="text-[2rem] text-center">How it Works?</h2> */}
+        <div className="max-w-[90%] mx-auto flex justify-between mt-[5rem]">
+          <HowItWorksCardV2
+            title={"Sign-up to join our growing network of riders"}
             description={
-              "Easily attach our innovative delivery box to your vehicle"
+              "Currently more than 3000 riders have already joined Evox community"
             }
-            imagePath={"delivery-box-rack-for-bike.png"}
+            imagePath={"signup.png"}
           />
-          <HowItWorksCard
-            title={"Step 2"}
+          <div className="mt-[80px]">
+            <svg
+              width="92"
+              height="16"
+              viewBox="0 0 92 16"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M91.7071 8.70711C92.0976 8.31658 92.0976 7.68342 91.7071 7.29289L85.3431 0.928932C84.9526 0.538408 84.3195 0.538408 83.9289 0.928932C83.5384 1.31946 83.5384 1.95262 83.9289 2.34315L89.5858 8L83.9289 13.6569C83.5384 14.0474 83.5384 14.6805 83.9289 15.0711C84.3195 15.4616 84.9526 15.4616 85.3431 15.0711L91.7071 8.70711ZM0 9H91V7H0V9Z"
+                fill="#C837AB"
+              />
+            </svg>
+          </div>
+          <HowItWorksCardV2
+            title={"Get Ready"}
             description={
-              "Dynamic ads play on screens, reaching a wide audience as you drive."
+              "Visit our partner for our all new innovative delivery box fitted to your scooter"
             }
-            imagePath={"evox-bike-2.png"}
+            imagePath={"box.png"}
           />
-          <HowItWorksCard
-            title={"Step 3"}
-            description={"Get paid for driving and advertising."}
-            imagePath={"giving-payment.png"}
+          <div className="mt-[80px]">
+            <svg
+              width="92"
+              height="16"
+              viewBox="0 0 92 16"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M91.7071 8.70711C92.0976 8.31658 92.0976 7.68342 91.7071 7.29289L85.3431 0.928932C84.9526 0.538408 84.3195 0.538408 83.9289 0.928932C83.5384 1.31946 83.5384 1.95262 83.9289 2.34315L89.5858 8L83.9289 13.6569C83.5384 14.0474 83.5384 14.6805 83.9289 15.0711C84.3195 15.4616 84.9526 15.4616 85.3431 15.0711L91.7071 8.70711ZM0 9H91V7H0V9Z"
+                fill="#C837AB"
+              />
+            </svg>
+          </div>
+          <HowItWorksCardV2
+            title={"Start Earning"}
+            description={
+              "Carry on with your daily delivery work and turn your daily routine to a revenue stream."
+            }
+            imagePath={"earning.png"}
           />
         </div>
       </section>
