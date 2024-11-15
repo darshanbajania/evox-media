@@ -1,12 +1,12 @@
 import type { Metadata } from "next";
-import { Inter, Roboto } from "next/font/google";
+import { Inter, Poppins, Roboto } from "next/font/google";
 import "./globals.css";
 
 import Navbar from "@/components/Navbar";
 import NextUIProviderWrapper from "@/components/providers/NextUiProviderWrapper";
 
 const inter = Inter({ subsets: ["latin"] });
-const roboto = Roboto({
+const roboto = Poppins({
   style: "normal",
   weight: ["100", "300", "400", "500", "700", "900"],
   subsets: ["latin"],
