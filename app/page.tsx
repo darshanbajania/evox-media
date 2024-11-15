@@ -18,7 +18,7 @@ export default function Home() {
         <div className="flex h-[90vh] relative">
           <div className="absolute  h-[90vh] w-full  -z-10">
             <div className="relative overflow-hidden">
-              {/* <div className="bg-black opacity-40 absolute top-0 left-0 w-full h-full"></div> */}
+              <div className="bg-black opacity-30 absolute top-0 left-0 w-full h-full"></div>
               <div className=" absolute left-[55%]  top-[20%] bottom-[0px] right-[0px] w-full h-full">
                 <img
                   src="3d-bike.png"
@@ -36,13 +36,13 @@ export default function Home() {
               </video> */}
             </div>
           </div>
-          <div className="flex  items-center flex-col w-[100%] pt-[5%]  border-1">
-            <h1 className="text-[4rem] w-[50%] text-white text-center font-thin ">
+          <div className="flex ml-[5%] flex-col w-[100%] pt-[8%]  bg-red">
+            <h1 className="text-[4rem] w-[50%]   text-white text-left font-regular ">
               The only out of home advertising that delivers conversions
             </h1>
-            <div className="mt-[7rem]">
+            <div className="mt-[4rem]">
               <Link href={"#our-supporters"}>
-                <CallToAction label={"Let us show you how"} />
+                <CallToAction label={"Let Us Show You How"} />
               </Link>
             </div>
           </div>
