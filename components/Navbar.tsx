@@ -78,7 +78,7 @@ const Navbar = () => {
         </NavbarBrand>
       </NavbarContent>
 
-      <NavbarContent className="hidden sm:flex gap-4" justify="center">
+      {/* <NavbarContent className="hidden sm:flex gap-4" justify="end">
         <NavbarItem>
           <Link color="foreground" href="/#about-us">
             Advertise with Us
@@ -89,6 +89,24 @@ const Navbar = () => {
             Rider Sign Up
           </Link>
         </NavbarItem>
+
+        <NavbarItem>
+          <Link color="foreground" href="/blogs">
+            Blogs
+          </Link>
+        </NavbarItem>
+      </NavbarContent> */}
+      <NavbarContent justify="end" className="gap-10">
+        <NavbarItem>
+          <Link color="foreground" href="/#about-us">
+            <p className="text-[1.1rem]">Advertise with Us</p>
+          </Link>
+        </NavbarItem>
+        <NavbarItem>
+          <Link color="foreground" href="/drivers">
+            <p className="text-[1.1rem]">Rider Sign Up</p>
+          </Link>
+        </NavbarItem>
         {/* <NavbarItem>
           <Link color="foreground" href="/#how-it-works">
             Company
@@ -96,38 +114,9 @@ const Navbar = () => {
         </NavbarItem> */}
         <NavbarItem>
           <Link color="foreground" href="/blogs">
-            Blogs
+            <p className="text-[1.1rem]">Blogs</p>
           </Link>
         </NavbarItem>
-        {/* <NavbarItem>
-          <Dropdown>
-            <DropdownTrigger>
-              <div className="cursor-pointer">Services</div>
-            </DropdownTrigger>
-            <DropdownMenu
-              onAction={handleAction}
-              aria-label="Dynamic Actions"
-              items={items}
-            >
-              {(item) => (
-                <DropdownItem
-                  key={item.key}
-                  color={item.key === "delete" ? "danger" : "default"}
-                  className={item.key === "delete" ? "text-danger" : ""}
-                >
-                  {item.label}
-                </DropdownItem>
-              )}
-            </DropdownMenu>
-          </Dropdown>
-        </NavbarItem> */}
-        {/* <NavbarItem>
-          <Link color="foreground" href="/for-advertisers/#contact-us">
-            Contact Us
-          </Link>
-        </NavbarItem> */}
-      </NavbarContent>
-      <NavbarContent justify="end">
         <a href="https://forms.gle/b29CLTnPZAxxd8XQ9" target="_blank">
           <CallToAction label={"Advertise With Us"} />
         </a>
