@@ -225,12 +225,14 @@ export default function Home() {
           </motion.div>
         </section>
         <section id="how-it-works" className="mb-[300px]">
-          <h2 className="text-3xl text-center mt-[5rem] ">How it Works?</h2>
-          <p className="text-2xl py-2 text-center text-[#51545C] mt-[2rem] bg-[#FEF8FF]">
+          <h2 className="text-2xl xl:text-3xl text-center mt-[5rem] ">
+            How it Works?
+          </h2>
+          <p className="text-xl xl:text-2xl py-2 text-center text-[#51545C] mt-[2rem] bg-[#FEF8FF]">
             Easy to use platform to launch and monitor your campaign successes
           </p>
 
-          <div className=" flex justify-center gap-[5rem] mt-[5rem]">
+          <div className=" flex flex-col xl:flex-row justify-center items-center xl:items-start gap-[5rem] mt-[5rem]">
             <motion.div
               initial={{ translateY: 50, opacity: 0 }}
               whileInView={{ translateY: 0, opacity: 1 }}
