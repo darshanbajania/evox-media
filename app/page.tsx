@@ -165,44 +165,46 @@ export default function Home() {
           </motion.div>
         </section>
 
-        <section id="services" className="max-w-[1440px] mx-auto">
-          <div className="flex flex-col md:flex-row h-[auto] md:h-[500px]  pt-5 px-5">
-            <motion.div
-              initial={{ translateX: -100, opacity: 0 }}
-              whileInView={{ translateX: 0, opacity: 1 }}
-              exit={{ translateX: 0, opacity: 1 }}
-              transition={{ duration: 0.5, ease: "easeIn" }}
-              viewport={{ margin: "-200px 0px 0px 0px" }}
-              className="flex  flex-1 flex-col justify-center"
-            >
-              <h1 className="text-[24px] md:text-[32px] xl:text-[44px] font-light w-[100%] xl:w-[70%]">
-                Get upto <span className="font-medium">28 million</span> ad runs
-                a day
-              </h1>
-              <p className="text-[16px] md:text-[18px] xl:text-[24px] text-[#51545C] mt-[4rem] w-[80%] md:w-[100%] xl:w-[70%]">
-                Advertise your brand on our network of digital screen and reach
-                millions of your potential buyer instantaneously
-              </p>
-              <p className="text-[16px] md:text-[18px] xl:text-[24px] text-[#51545C] mt-[2rem] w-[80%] md:w-[100%] xl:w-[70%]">
-                Your brand travels around the city and get seen by millions of
-                people
-              </p>
-              <div className="flex-start mt-[2rem]">
-                <Link href={"https://forms.gle/b29CLTnPZAxxd8XQ9"}>
-                  <CallToAction label={"Get Started Now"} />
-                </Link>
-              </div>
-            </motion.div>
-            <motion.div
-              initial={{ translateX: 150, opacity: 0 }}
-              whileInView={{ translateX: 0, opacity: 1 }}
-              exit={{ translateX: 0, opacity: 1 }}
-              transition={{ duration: 0.5, ease: "easeIn" }}
-              viewport={{ margin: "-200px 0px 0px 0px" }}
-              className=" md:w-[50%] flex items-center justify-center mt-[5rem] md:mt-0"
-            >
-              <img src="3d-bike.png" className="w-[100%]" />
-            </motion.div>
+        <section id="services" className="overflow-hidden">
+          <div className="max-w-[1440px] mx-auto">
+            <div className="flex flex-col md:flex-row h-[auto] md:h-[500px]  pt-5 px-5">
+              <motion.div
+                initial={{ translateX: -100, opacity: 0 }}
+                whileInView={{ translateX: 0, opacity: 1 }}
+                exit={{ translateX: 0, opacity: 1 }}
+                transition={{ duration: 0.5, ease: "easeIn" }}
+                viewport={{ margin: "-200px 0px 0px 0px" }}
+                className="flex  flex-1 flex-col justify-center"
+              >
+                <h1 className="text-[24px] md:text-[32px] xl:text-[44px] font-light w-[100%] xl:w-[70%]">
+                  Get upto <span className="font-medium">28 million</span> ad
+                  runs a day
+                </h1>
+                <p className="text-[16px] md:text-[18px] xl:text-[24px] text-[#51545C] mt-[4rem] w-[80%] md:w-[100%] xl:w-[70%]">
+                  Advertise your brand on our network of digital screen and
+                  reach millions of your potential buyer instantaneously
+                </p>
+                <p className="text-[16px] md:text-[18px] xl:text-[24px] text-[#51545C] mt-[2rem] w-[80%] md:w-[100%] xl:w-[70%]">
+                  Your brand travels around the city and get seen by millions of
+                  people
+                </p>
+                <div className="flex-start mt-[2rem]">
+                  <Link href={"https://forms.gle/b29CLTnPZAxxd8XQ9"}>
+                    <CallToAction label={"Get Started Now"} />
+                  </Link>
+                </div>
+              </motion.div>
+              <motion.div
+                initial={{ translateX: 150, opacity: 0 }}
+                whileInView={{ translateX: 0, opacity: 1 }}
+                exit={{ translateX: 0, opacity: 1 }}
+                transition={{ duration: 0.5, ease: "easeIn" }}
+                viewport={{ margin: "-200px 0px 0px 0px" }}
+                className=" md:w-[50%] flex items-center justify-center mt-[5rem] md:mt-0"
+              >
+                <img src="3d-bike.png" className="w-[100%]" />
+              </motion.div>
+            </div>
           </div>
         </section>
         <section
