@@ -132,7 +132,7 @@ const DriversPage = () => {
       </section> */}
       <section className="mt-[5rem]">
         {/* <h2 className="text-[2rem] text-center">How it Works?</h2> */}
-        <div className="max-w-[90%] mx-auto flex justify-between mt-[5rem]">
+        <div className="max-w-[90%] mx-auto flex flex-col xl:flex-row justify-between items-center xl:items-start mt-[5rem]">
           <HowItWorksCardV2
             title={"Sign-up to join our growing network of riders"}
             description={
@@ -140,7 +140,7 @@ const DriversPage = () => {
             }
             imagePath={"signup.png"}
           />
-          <div className="mt-[80px]">
+          <div className="pt-[80px] pb-[80px] xl:pb-[80px] rotate-90 xl:rotate-0">
             <svg
               width="92"
               height="16"
@@ -161,7 +161,7 @@ const DriversPage = () => {
             }
             imagePath={"box.png"}
           />
-          <div className="mt-[80px]">
+          <div className="pt-[80px] pb-[80px] xl:pb-[80px] rotate-90 xl:rotate-0">
             <svg
               width="92"
               height="16"
