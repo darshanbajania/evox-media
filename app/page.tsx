@@ -95,7 +95,7 @@ export default function Home() {
 
         <section
           id="fleet-section"
-          className="max-w-[90%] mx-auto mt-[200px] lg:mt-[300px] mb-[300px]"
+          className="max-w-[95%] sm:max-w-[90%] mx-auto mt-[200px] lg:mt-[300px] mb-[300px]"
         >
           <div className="mt-[5rem]  mb-[5rem]">
             <h2 className="text-[2em] lg:text-[3em] text-center mt-[5rem] font-light  text-[#1E1F22]">
@@ -107,14 +107,14 @@ export default function Home() {
               installed on scooters, taxis and bicycles{" "}
             </p>
           </div>
-          <div className="flex justify-center mt-[5rem] gap-[80px] items-center">
+          <div className="flex justify-center pt-[5rem] gap-[40px] md:gap-[80px] items-center">
             <motion.div
               initial={{ translateY: 50, opacity: 0 }}
               whileInView={{ translateY: 0, opacity: 1 }}
               exit={{ translateY: 0, opacity: 1 }}
               transition={{ duration: 0.5, ease: "easeIn" }}
               // viewport={{ margin: "-150px" }}
-              className="w-[300px] h-[300px] rounded-full bg-[#FEFAFF] flex items-center justify-center pr-4"
+              className="w-[140px] sm:w-[200px] md:w-[300px] h-[140px] sm:h-[200px]  md:h-[300px] rounded-full bg-[#FEFAFF] flex items-center justify-center pr-4"
             >
               <img
                 src="3d-bike.png"
@@ -126,11 +126,14 @@ export default function Home() {
               whileInView={{ translateY: 0, opacity: 1 }}
               exit={{ translateY: 0, opacity: 1 }}
               transition={{ duration: 0.5, ease: "easeIn" }}
-              className="w-[180px] h-[180px] rounded-full bg-[#FEFAFF] flex items-center justify-center p-4 relative"
+              className="w-[100px] sm:w-[140px] md:w-[180px] h-[100px]  sm:h-[140px]  md:h-[180px] rounded-full bg-[#FEFAFF] flex items-center justify-center p-2 md:p-4 relative"
             >
               <img src="assets/car.png" className="h-[90%] w-[90%]" />
               <div className="absolute  w-full h-full rounded-full bg-[#FEFAFF]/70 top-0 left-0 flex items-center justify-center">
-                <p className="text-black"> Launching Soon...</p>
+                <p className="text-black text-[10px] sm:text-[12px] md:text-[15px] text-center">
+                  {" "}
+                  Launching Soon...
+                </p>
               </div>
             </motion.div>
             <motion.div
@@ -138,11 +141,14 @@ export default function Home() {
               whileInView={{ translateY: 0, opacity: 1 }}
               exit={{ translateY: 0, opacity: 1 }}
               transition={{ duration: 0.5, ease: "easeIn" }}
-              className="w-[180px] h-[180px] rounded-full bg-[#FEFAFF] flex items-center justify-center p-4 relative"
+              className="w-[100px] sm:w-[140px] md:w-[180px] h-[100px]  sm:h-[140px]  md:h-[180px] rounded-full bg-[#FEFAFF] flex items-center justify-center p-2 md:p-4 relative"
             >
               <img src="assets/bicycle.png" className="h-[90%]" />
               <div className="absolute  w-full h-full rounded-full bg-[#FEFAFF]/70 top-0 left-0 flex items-center justify-center">
-                <p className="text-black"> Launching Soon...</p>
+                <p className="text-black text-[10px] sm:text-[12px] md:text-[15px] text-center">
+                  {" "}
+                  Launching Soon...
+                </p>
               </div>
             </motion.div>
           </div>
