@@ -28,12 +28,12 @@ export default function RootLayout({
           <Navbar />
           {children}
           <footer>
-            <div className="  flex h-[320px] bg-[#FEF9FF]">
+            <div className="  flex min-h-[320px] bg-[#FEF9FF] py-5">
               <div className="w-[90%] mx-auto flex items-center justify-center">
                 <div className="w-[50%] ">
                   <div className="w-[80%]">
                     <h2 className="text-2xl font-medium">About Us</h2>
-                    <p className="text-lg">
+                    <p className="text-sm xl:text-lg mt-3 xl:mt-0">
                       We are a brand new OOH advertising company with a unique
                       concept of allowing advertisers to deliver hyper-local
                       campaigns and reach millions of consumers instantly. We
@@ -48,8 +48,8 @@ export default function RootLayout({
                   </div>
                 </div>
                 <div className="w-[50%] flex items-center flex-col justify-center py-2">
-                  <p className="text-xl">hello@evox.media</p>
-                  <p className="text-xl">Phone: +44 03330 500911</p>
+                  <p className="text-sm xl:text-xl">hello@evox.media</p>
+                  <p className="text-sm xl:text-xl">Phone: +44 03330 500911</p>
                   <div className="flex justify-between w-[30%] my-[2rem]">
                     <a href="https://x.com/evoxmedia_" target="_blank">
                       <img
@@ -76,7 +76,9 @@ export default function RootLayout({
                       />
                     </a>
                   </div>
-                  <p className="text-xl">Privacy Policy | Terms of Service</p>
+                  <p className="text-sm xl:text-xl">
+                    Privacy Policy | Terms of Service
+                  </p>
                 </div>
               </div>
             </div>
