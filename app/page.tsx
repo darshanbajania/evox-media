@@ -19,10 +19,10 @@ export default function Home() {
           <div className="absolute  h-[90vh] w-full  -z-10">
             <div className="relative overflow-hidden">
               <div className="bg-black opacity-30 absolute top-0 left-0 w-full h-full"></div>
-              <div className=" absolute left-[55%]  top-[20%] bottom-[0px] right-[0px] w-full h-full">
+              <div className=" absolute left-[0%] sm:left-[10%] lg:left-[55%] top-[48%] lg:top-[20%] bottom-[0px] right-[0px] w-full h-full">
                 <img
                   src="3d-bike.png"
-                  className="w-[800px] h-[800px] object-contain"
+                  className="w-[500px] h-[500px] md:w-[800px] w-[500px] h-[500px] md:h-[800px] object-contain"
                 />
               </div>
               <div className="w-full  h-[90vh] border-2">
@@ -36,8 +36,8 @@ export default function Home() {
               </video> */}
             </div>
           </div>
-          <div className="flex ml-[5%] flex-col w-[100%] pt-[8%]  bg-red">
-            <h1 className="text-[4rem] w-[50%]   text-white text-left font-regular ">
+          <div className="flex ml-[5%] flex-col w-[100%] pt-[8%]  bg-red items-center lg:items-start">
+            <h1 className="text-[3rem] lg:text-[4rem] w-[100%]  lg:w-[50%]   text-white text-center lg:text-left font-regular ">
               The only out of home advertising that delivers conversions
             </h1>
             <div className="mt-[4rem]">
