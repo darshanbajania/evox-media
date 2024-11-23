@@ -498,7 +498,7 @@ export default function Home() {
           className="max-w-[90%] mx-auto mt-[200px] mb-[180px]"
         >
           <div className="pt-[10rem]  pb-[10rem] flex flex-col items-center justify-center">
-            <p className="text-[#1E1F22] text-[32px] font-light text-center w-[40%] mb-[2rem]">
+            <p className="text-[#1E1F22] text-[24px] xl:text-[32px] font-light text-center w-[80%] xl:w-[40%] mb-[2rem]">
               Get seen by <span className="font-medium">millions</span> today
             </p>
             <a href="https://forms.gle/b29CLTnPZAxxd8XQ9" target="_blank">
