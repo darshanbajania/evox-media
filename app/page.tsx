@@ -281,10 +281,10 @@ export default function Home() {
         </section>
         <section className="max-w-[80%] mx-auto mb-[300px]">
           <div className=" pb-[50px]">
-            <h2 className="text-3xl mb-[4rem] ">
+            <h2 className="text-2xl xl:text-3xl mb-[4rem] ">
               Pick your perfect ad-space without the hassle!
             </h2>
-            <div className="flex justify-between">
+            <div className="flex flex-col xl:flex-row justify-between items-center xl:items-start gap-y-20 xl:gap-y-0">
               <motion.div
                 initial={{ scale: 1 }}
                 whileHover={{ scale: 1.2 }}
