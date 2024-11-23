@@ -7,7 +7,7 @@ const ReviewCard = ({ author, designation, review }) => {
         <div className="flex gap-[16px]">
           <img
             className="h-[70px] w-[70px] rounded-full"
-            src="https://r2.erweima.ai/imgcompressed/img/compressed_95f6dc695351dbb5cf511ee473897718.webp"
+            src="https://www.pngitem.com/pimgs/m/421-4212617_person-placeholder-image-transparent-hd-png-download.png"
           />
           <div>
             <p className="font-medium text-[20px] text-[#51545C]">{author}</p>
