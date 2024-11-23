@@ -12,6 +12,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Marquee from "react-fast-marquee";
 import { useRouter } from "next/router";
+import { formLinks } from "@/utils/forms";
 
 // import Swiper JS
 
@@ -47,7 +48,7 @@ const DriversPage = () => {
                 Turn Your Daily Routes into a Revenue Stream with Evox Media
               </p>
               <div className="flex-start mt-[2rem]">
-                <a href="https://forms.gle/58BrfTxd9Vk8RnrLA" target="_blank">
+                <a href={formLinks.driverEnquiry} target="_blank">
                   <CallToAction label={"Join Our Driver Network"} />
                 </a>
               </div>
@@ -284,7 +285,7 @@ const DriversPage = () => {
           Join Us Today
         </h2>
         <div className="flex justify-center">
-          <a href="https://forms.gle/58BrfTxd9Vk8RnrLA" target="_blank">
+          <a href={formLinks.driverEnquiry} target="_blank">
             <CallToAction label={"Sign Up Now"} />
           </a>
         </div>
@@ -347,7 +348,7 @@ const DriversPage = () => {
           Still have more questions?
         </h2>
         <div className="flex justify-center items-center gap-5 ">
-          <a href="https://forms.gle/58BrfTxd9Vk8RnrLA" target="_blank">
+          <a href={formLinks.driverEnquiry} target="_blank">
             <CallToAction label={"Sign Up Now"} />
           </a>
           <div className="h-[30px] w-[1px] bg-[#E5E6E9]" />
