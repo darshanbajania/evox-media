@@ -166,24 +166,24 @@ export default function Home() {
         </section>
 
         <section id="services" className="max-w-[1440px] mx-auto">
-          <div className="flex h-[500px]  pt-5">
+          <div className="flex flex-col md:flex-row h-[auto] sm:h-[500px]  pt-5 px-5">
             <motion.div
               initial={{ translateX: -100, opacity: 0 }}
               whileInView={{ translateX: 0, opacity: 1 }}
               exit={{ translateX: 0, opacity: 1 }}
               transition={{ duration: 0.5, ease: "easeIn" }}
-              viewport={{ margin: "-400px" }}
+              viewport={{ margin: "-200px 0px 0px 0px" }}
               className="flex  flex-1 flex-col justify-center"
             >
-              <h1 className="text-[44px] font-light w-[70%]">
+              <h1 className="text-[24px] sm:text-[44px] font-light w-[100%] sm:w-[70%]">
                 Get upto <span className="font-medium">28 million</span> ad runs
                 a day
               </h1>
-              <p className="text-[24px] text-[#51545C] mt-[4rem] w-[70%]">
+              <p className="text-[16px] sm:text-[24px] text-[#51545C] mt-[4rem] w-[70%]">
                 Advertise your brand on our network of digital screen and reach
                 millions of your potential buyer instantaneously
               </p>
-              <p className="text-[24px] text-[#51545C] mt-[2rem] w-[70%]">
+              <p className="text-[16px] sm:text-[24px] text-[#51545C] mt-[2rem] w-[70%]">
                 Your brand travels around the city and get seen by millions of
                 people
               </p>
@@ -198,8 +198,8 @@ export default function Home() {
               whileInView={{ translateX: 0, opacity: 1 }}
               exit={{ translateX: 0, opacity: 1 }}
               transition={{ duration: 0.5, ease: "easeIn" }}
-              viewport={{ margin: "-400px" }}
-              className="w-[50%] flex items-center justify-center"
+              viewport={{ margin: "-200px 0px 0px 0px" }}
+              className=" sm:w-[50%] flex items-center justify-center mt-[5rem] sm:mt-0"
             >
               <img src="3d-bike.png" className="w-[100%]" />
             </motion.div>
