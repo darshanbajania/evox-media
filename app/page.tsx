@@ -346,7 +346,7 @@ export default function Home() {
           <h2 className="text-3xl text-center mt-[5rem] mb-[3rem] ">
             The Tech Bit
           </h2>
-          <div className="flex justify-center  bg-[#F5FFFF] py-[100px] mb-[50px]">
+          <div className="flex justify-center  bg-[#F5FFFF] py-[40px] xl:py-[100px] mb-[50px]">
             <div className="flex h-[400px] w-[90%]  pt-5 ">
               <div className="mr-5">
                 <div className="relative w-[1px] h-[90%] bg-[#51545C]">
@@ -354,20 +354,20 @@ export default function Home() {
                 </div>
               </div>
               <div className="flex  flex-1 flex-col ">
-                <h1 className="text-[32px] text-[#1E1E1E] font-light w-[70%] mt-[50px]">
+                <h1 className="text-[20px] xl:text-[32px] text-[#1E1E1E] font-light w-[70%] mt-[50px]">
                   <span className="font-medium">Monitor</span> your Ad Campaign
                   in real time
                 </h1>
-                <p className="text-[24px]  text-[#51545C] mt-[1rem] w-[40%]">
+                <p className="text-[16px] xl:text-[24px]  text-[#51545C] mt-[1rem] w-[70%] xl:w-[40%]">
                   Heat map and ad run counts by vehicle type
                 </p>
               </div>
               <div className="w-[50%] flex items-center justify-center ">
-                <img src="heatmap.png" className="h-[100%]" />
+                <img src="heatmap.png" className="h-[60%] xl:h-[100%]" />
               </div>
             </div>
           </div>
-          <div className="flex justify-center  bg-[#FFF8FD] py-[100px] mb-[50px]">
+          <div className="flex justify-center  bg-[#FFF8FD] py-[40px] xl:py-[100px] mb-[50px]">
             <div className="flex h-[400px] w-[90%]  pt-5 ">
               <div className="mr-5">
                 <div className="relative w-[1px] h-[90%] bg-[#51545C]">
@@ -375,21 +375,21 @@ export default function Home() {
                 </div>
               </div>
               <div className="flex  flex-1 flex-col ">
-                <h1 className="text-[32px] text-[#1E1E1E] font-light w-[64%] mt-[50px]">
+                <h1 className="text-[20px] xl:text-[32px] text-[#1E1E1E] font-light w-[80%] xl:w-[64%] mt-[50px]">
                   Run <span className="font-medium">A/B tests</span> by changing
                   your ads across different zones
                 </h1>
-                <p className="text-[24px]  text-[#51545C] mt-[1rem] w-[50%]">
+                <p className="text-[16px] xl:text-[24px]  text-[#51545C] mt-[1rem] w-[90%] xl:w-[50%]">
                   Target rush hour commuters to day time strollers by running
                   different versions of ads in a single day
                 </p>
               </div>
               <div className="w-[50%] flex items-center justify-center ">
-                <img src="ab-testing.png" className="h-[100%]" />
+                <img src="ab-testing.png" className="h-[60%] xl:h-[100%] " />
               </div>
             </div>
           </div>
-          <div className="flex justify-center  bg-[#F5FFF8] py-[100px]">
+          <div className="flex justify-center  bg-[#F5FFF8] py-[40px] xl:py-[100px]">
             <div className="flex h-[400px] w-[90%]  pt-5 ">
               <div className="mr-5">
                 <div className="relative w-[1px] h-[90%] bg-[#51545C]">
@@ -397,16 +397,16 @@ export default function Home() {
                 </div>
               </div>
               <div className="flex  flex-1 flex-col ">
-                <h1 className="text-[32px] text-[#1E1E1E] font-light w-[50%] mt-[50px]">
+                <h1 className="text-[20px] xl:text-[32px] text-[#1E1E1E] font-light w-[80%] xl:w-[64%] mt-[50px]">
                   <span className="font-medium">Broadcast</span> your Campaign
                 </h1>
-                <p className="text-[24px]  text-[#51545C] mt-[1rem] w-[50%]">
+                <p className="text-[16px] xl:text-[24px]  text-[#51545C] mt-[1rem] w-[90%] xl:w-[50%]">
                   Enhance conversions by Broadcasting your campaign messages
                   directly to consumers
                 </p>
               </div>
               <div className="w-[50%] flex items-center justify-center ">
-                <img src="megaphone.png" className="h-[50%]" />
+                <img src="megaphone.png" className="h-[30%] xl:h-[50%]" />
               </div>
             </div>
           </div>
