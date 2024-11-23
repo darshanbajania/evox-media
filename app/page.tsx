@@ -95,14 +95,14 @@ export default function Home() {
 
         <section
           id="fleet-section"
-          className="max-w-[90%] mx-auto mt-[300px] mb-[300px]"
+          className="max-w-[90%] mx-auto mt-[200px] lg:mt-[300px] mb-[300px]"
         >
           <div className="mt-[5rem]  mb-[5rem]">
-            <h2 className="text-[3em] text-center mt-[5rem] font-light  text-[#1E1F22]">
+            <h2 className="text-[2em] lg:text-[3em] text-center mt-[5rem] font-light  text-[#1E1F22]">
               Get up to <span className="font-medium">15 million ad views</span>{" "}
               a day
             </h2>
-            <p className="text-xl text-center text-[#51545C]">
+            <p className="text-lg sm:text-xl text-center text-[#51545C]">
               We operate the largest network of high definition digital screen
               installed on scooters, taxis and bicycles{" "}
             </p>
