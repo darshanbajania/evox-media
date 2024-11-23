@@ -280,7 +280,9 @@ const DriversPage = () => {
         </div>
       </section>
       <section id="contact-us" className="my-[200px]">
-        <h2 className="text-[2rem] mb-[2rem] text-center">Join Us Today</h2>
+        <h2 className="text-[1.6rem] xl:text-[2rem] mb-[2rem] text-center">
+          Join Us Today
+        </h2>
         <div className="flex justify-center">
           <a href="https://forms.gle/58BrfTxd9Vk8RnrLA" target="_blank">
             <CallToAction label={"Sign Up Now"} />
@@ -341,7 +343,7 @@ const DriversPage = () => {
         </Marquee>
       </section>
       <section id="contact-us" className="mt-[200px] mb-[100px]">
-        <h2 className="text-[2rem] mb-[2rem] text-center">
+        <h2 className="text-[1.6rem] xl:text-[2rem] mb-[2rem] text-center">
           Still have more questions?
         </h2>
         <div className="flex justify-center items-center gap-5 ">
