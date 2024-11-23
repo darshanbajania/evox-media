@@ -233,7 +233,7 @@ const DriversPage = () => {
             />
           </Slider>
 
-          <div className="absolute top-0 -left-[200px] h-[100%] w-[200px]   flex flex-col justify-center items-center">
+          <div className="absolute top-0 -left-[30px] xl:-left-[200px] h-[100%] w-[50px] xl:w-[200px] flex flex-col justify-center items-center">
             <button
               className="button bg-[#FD80A3] rounded-full "
               onClick={previous}
@@ -255,7 +255,7 @@ const DriversPage = () => {
               </svg>
             </button>
           </div>
-          <div className="absolute top-0 -right-[200px] h-[100%] w-[200px]  flex flex-col justify-center items-center">
+          <div className="absolute top-0 -right-[30px] xl:-right-[200px] h-[100%]  w-[50px] xl:w-[200px]  flex flex-col justify-center items-center">
             <button
               className="button  bg-[#FD80A3] rounded-full "
               onClick={next}
