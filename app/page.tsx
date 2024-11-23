@@ -494,7 +494,7 @@ export default function Home() {
           </div>
         </section> */}
         <section
-          id="how-it-works"
+          id="supporters-slider"
           className="max-w-[90%] mx-auto mt-[200px] mb-[50px] xl:mb-[180px]"
         >
           <div className="pt-[10rem]  pb-[10rem] flex flex-col items-center justify-center">
