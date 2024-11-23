@@ -495,7 +495,7 @@ export default function Home() {
         </section> */}
         <section
           id="how-it-works"
-          className="max-w-[90%] mx-auto mt-[200px] mb-[180px]"
+          className="max-w-[90%] mx-auto mt-[200px] mb-[50px] xl:mb-[180px]"
         >
           <div className="pt-[10rem]  pb-[10rem] flex flex-col items-center justify-center">
             <p className="text-[#1E1F22] text-[24px] xl:text-[32px] font-light text-center w-[80%] xl:w-[40%] mb-[2rem]">
@@ -510,43 +510,43 @@ export default function Home() {
           <Marquee speed={150} pauseOnClick gradient>
             <img
               src="assets/partner-logos/gaston-logo.png"
-              className="w-[180px] h-[80px] object-contain mr-[5rem]"
+              className="w-[120px] h-[40px] xl:w-[180px] xl:h-[80px] object-contain mr-[5rem]"
             />
             <img
               src="assets/partner-logos/jegnus-logo.png"
-              className="w-[180px] h-[80px] object-contain mr-[5rem]"
+              className="w-[120px] h-[40px] xl:w-[180px] xl:h-[80px] object-contain mr-[5rem]"
             />
             <img
               src="assets/partner-logos/matru-logo.png"
-              className="w-[180px] h-[80px] object-contain mr-[5rem]"
+              className="w-[120px] h-[40px] xl:w-[180px] xl:h-[80px] object-contain mr-[5rem]"
             />
             <img
               src="assets/partner-logos/spco-logo.png"
-              className="w-[180px] h-[80px] object-contain mr-[5rem]"
+              className="w-[120px] h-[40px] xl:w-[180px] xl:h-[80px] object-contain mr-[5rem]"
             />
             <img
               src="assets/partner-logos/meal-tech-logo.png"
-              className="w-[180px] h-[80px] object-contain mr-[5rem]"
+              className="w-[120px] h-[40px] xl:w-[180px] xl:h-[80px] object-contain mr-[5rem]"
             />
             <img
               src="assets/partner-logos/just-eat-logo.png"
-              className="w-[180px] h-[80px] object-contain mr-[5rem]"
+              className="w-[120px] h-[40px] xl:w-[180px] xl:h-[80px] object-contain mr-[5rem]"
             />
             <img
               src="assets/partner-logos/bosch-logo.png"
-              className="w-[180px] h-[80px] object-contain mr-[5rem]"
+              className="w-[120px] h-[40px] xl:w-[180px] xl:h-[80px] object-contain mr-[5rem]"
             />
             <img
               src="assets/partner-logos/apple-logo.png"
-              className="w-[180px] h-[80px] object-contain mr-[5rem]"
+              className="w-[120px] h-[40px] xl:w-[180px] xl:h-[80px] object-contain mr-[5rem]"
             />
             <img
               src="assets/partner-logos/google-logo.png"
-              className="w-[180px] h-[80px] object-contain mr-[5rem]"
+              className="w-[120px] h-[40px] xl:w-[180px] xl:h-[80px] object-contain mr-[5rem]"
             />
             <img
               src="assets/partner-logos/red-bull-logo.png"
-              className="w-[180px] h-[80px] object-contain mr-[5rem]"
+              className="w-[120px] h-[40px] xl:w-[180px] xl:h-[80px] object-contain mr-[5rem]"
             />
           </Marquee>
         </section>
