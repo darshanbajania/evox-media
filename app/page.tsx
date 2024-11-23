@@ -4,6 +4,7 @@ import Navbar from "@/components/Navbar";
 import BenefitsCardV2 from "@/components/advertisersPage/BenefitsCardV2";
 import HowItWorksCardV2 from "@/components/advertisersPage/HowItWorksCardV2";
 import HowItWorksCard from "@/components/homePage/HowItWorksCard";
+import PartnerCard from "@/components/homePage/PartnerCard";
 import ReviewCard from "@/components/homePage/ReviewCard";
 import { motion } from "framer-motion";
 import Image from "next/image";
@@ -61,56 +62,29 @@ export default function Home() {
           </div> */}
         </div>
       </section>
-      <div className=" pt-[8rem]">
+      <div className=" pt-[4rem] lg:pt-[8rem]">
         <section id="our-supporters" className="max-w-[90%] mx-auto ">
-          <div className="flex items-center  relative h-[200px] gap-x-10">
+          <div className="flex items-center flex-col lg:flex-row relative h-[200px] gap-x-10">
             <div className=" pr-3 h-full  relative flex items-stretch">
-              <div className="h-full border-r-0 flex items-center">
-                <h2 className="text-4xl font-light">Our Supporters</h2>
+              <div className="h-full border-r-0 flex  items-center">
+                <h2 className="text-3xl md:text-4xl font-light">
+                  Our Supporters
+                </h2>
               </div>
             </div>
-            <div className="w-[2px] h-full bg-slate-200" />
-            <div className="flex flex-1 flex-wrap justify-between gap-x-2 gap-y-4">
-              <img
-                src="assets/partner-logos/gaston-logo.png"
-                className="w-[180px] h-[80px] object-contain"
-              />
-              <img
-                src="assets/partner-logos/jegnus-logo.png"
-                className="w-[180px] h-[80px] object-contain"
-              />
-              <img
-                src="assets/partner-logos/matru-logo.png"
-                className="w-[180px] h-[80px] object-contain"
-              />
-              <img
-                src="assets/partner-logos/spco-logo.png"
-                className="w-[180px] h-[80px] object-contain"
-              />
-              <img
-                src="assets/partner-logos/meal-tech-logo.png"
-                className="w-[180px] h-[80px] object-contain"
-              />
-              <img
-                src="assets/partner-logos/just-eat-logo.png"
-                className="w-[180px] h-[80px] object-contain"
-              />
-              <img
-                src="assets/partner-logos/bosch-logo.png"
-                className="w-[180px] h-[80px] object-contain"
-              />
-              <img
-                src="assets/partner-logos/apple-logo.png"
-                className="w-[180px] h-[80px] object-contain"
-              />
-              <img
-                src="assets/partner-logos/google-logo.png"
-                className="w-[180px] h-[80px] object-contain"
-              />
-              <img
-                src="assets/partner-logos/red-bull-logo.png"
-                className="w-[180px] h-[80px] object-contain"
-              />
+            <div className="w-[2px] h-full bg-slate-200 hidden lg:block" />
+            <div className="flex flex-1 flex-wrap justify-between gap-x-10 md:gap-x-2 gap-y-4 mt-4 lg:mt-0">
+              <PartnerCard path="assets/partner-logos/gaston-logo.png" />
+              <PartnerCard path="assets/partner-logos/jegnus-logo.png" />
+              <PartnerCard path="assets/partner-logos/matru-logo.png" />
+              <PartnerCard path="assets/partner-logos/spco-logo.png" />
+              <PartnerCard path="assets/partner-logos/meal-tech-logo.png" />
+              <PartnerCard path="assets/partner-logos/just-eat-logo.png" />
+              <PartnerCard path="assets/partner-logos/bosch-logo.png" />
+              <PartnerCard path="assets/partner-logos/apple-logo.png" />
+              <PartnerCard path="assets/partner-logos/google-logo.png" />
+              <PartnerCard path="assets/partner-logos/red-bull-logo.png" />
+
               {/* <img
                 src="assets/partner-logos/maserati-logo.png"
                 className="w-[150px] h-[50px] object-contain"
