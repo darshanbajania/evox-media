@@ -17,11 +17,13 @@ const BlogCard = () => {
         src="blog-1-banner.webp"
         className="w-full h-[300px] object-contain"
       />
-      <div className="absolute bottom-0 left-0 bg-white p-2 rounded-lg">
-        <h2 className="text-xl">
+      <div className="absolute bottom-0 left-0 bg-white p-2 rounded-lg w-[100%]">
+        <h2 className="text-xl text-[#1E1F22] ">
           How to Run Out-of-Home Advertising Efficiently
         </h2>
-        <p>How to Run Out-of-Home Advertising Efficiently</p>
+        <p className="mt-2 text-[#51545C] truncate ...">
+          Out-of-home (OOH) advertising remains a powerful tool
+        </p>
       </div>
     </div>
   );
