@@ -33,17 +33,17 @@ const DriversPage = () => {
   return (
     <div className="">
       <section className="">
-        <div className="max-w-[90%] mx-auto relative py-[5rem]">
-          <div className="flex h-[500px]  ">
-            <div className="w-[50%] relative h-full">
+        <div className="max-w-[90%] mx-auto relative py-[5rem] mb-[300px] xl:mb-[0px] ">
+          <div className="flex flex-col h-[500px]  ">
+            <div className="w-[100%] xl:w-[50%] relative h-full">
               <img src="3d-bike.png" className="w-full h-full object-contain" />
             </div>
 
-            <div className="flex  flex-1 flex-col justify-center absolute w-[40%] top-0 h-[100%] right-0 ">
+            <div className="flex  flex-1 flex-col justify-center xl:absolute xl:w-[40%] top-0 h-[100%] right-0 mt-[100px] xl:mt-0">
               <h1 className="text-[3rem] w-[100%] mb-[2rem]">
                 Drive, Advertise, Earn
               </h1>
-              <p className="text-[1.5rem] text-[#51545C] w-[50%]">
+              <p className="text-[1.5rem] text-[#51545C] xl:w-[50%]">
                 Turn Your Daily Routes into a Revenue Stream with Evox Media
               </p>
               <div className="flex-start mt-[2rem]">
