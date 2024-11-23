@@ -215,9 +215,9 @@ export default function Home() {
             exit={{ translateY: 0, opacity: 1 }}
             transition={{ duration: 0.5, ease: "easeIn" }}
             viewport={{ margin: "-100px" }}
-            className="pt-[10rem]  pb-[10rem] flex justify-center"
+            className="pt-[4rem] md:pt-[10rem] pb-[4rem] md:pb-[10rem] flex justify-center"
           >
-            <p className="text-[#1E1F22] text-[32px] font-light text-center w-[40%]">
+            <p className="text-[#1E1F22] text-[24px] xl:text-[32px] font-light text-center w-[90%] lg:w-[60%] xl:w-[40%]">
               <span className="font-medium">Don’t wait</span> for people to walk
               by your Ad on the banner,{" "}
               <span className="font-medium">take your brand to them</span>
