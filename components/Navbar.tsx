@@ -23,16 +23,9 @@ import {
 } from "@nextui-org/dropdown";
 
 const menuItems = [
-  "Profile",
-  "Dashboard",
-  "Activity",
-  "Analytics",
-  "System",
-  "Deployments",
-  "My Settings",
-  "Team Settings",
-  "Help & Feedback",
-  "Log Out",
+  { label: "Advertise With Us", path: "/for-advertisers" },
+  { label: "Ride Sign Up", path: "/drivers" },
+  { label: "Blogs", path: "/blogs" },
 ];
 const items = [
   {
@@ -96,13 +89,13 @@ const Navbar = () => {
           </Link>
         </NavbarItem>
       </NavbarContent> */}
-      <NavbarContent justify="end" className="gap-10">
-        <NavbarItem>
+      <NavbarContent justify="end" className=" gap-10">
+        <NavbarItem className="hidden sm:flex">
           <Link color="foreground" href="/#about-us">
             <p className="text-[1.1rem]">Advertise with Us</p>
           </Link>
         </NavbarItem>
-        <NavbarItem>
+        <NavbarItem className="hidden sm:flex">
           <Link color="foreground" href="/drivers">
             <p className="text-[1.1rem]">Rider Sign Up</p>
           </Link>
@@ -112,31 +105,28 @@ const Navbar = () => {
             Company
           </Link>
         </NavbarItem> */}
-        <NavbarItem>
+        <NavbarItem className="hidden sm:flex">
           <Link color="foreground" href="/blogs">
             <p className="text-[1.1rem]">Blogs</p>
           </Link>
         </NavbarItem>
-        <a href="https://forms.gle/b29CLTnPZAxxd8XQ9" target="_blank">
-          <CallToAction label={"Advertise With Us"} />
-        </a>
+        <NavbarItem>
+          <a href="https://forms.gle/b29CLTnPZAxxd8XQ9" target="_blank">
+            <CallToAction label={"Advertise With Us"} />
+          </a>
+        </NavbarItem>
       </NavbarContent>
+
       <NavbarMenu>
         {menuItems.map((item, index) => (
-          <NavbarMenuItem key={`${item}-${index}`}>
+          <NavbarMenuItem key={`${item.label}-${index}`}>
             <Link
-              color={
-                index === 2
-                  ? "primary"
-                  : index === menuItems.length - 1
-                  ? "danger"
-                  : "foreground"
-              }
+              color={"foreground"}
               className="w-full"
-              href="#"
+              href={item.path}
               size="lg"
             >
-              {item}
+              {item.label}
             </Link>
           </NavbarMenuItem>
         ))}
