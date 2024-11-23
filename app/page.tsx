@@ -6,6 +6,7 @@ import HowItWorksCardV2 from "@/components/advertisersPage/HowItWorksCardV2";
 import HowItWorksCard from "@/components/homePage/HowItWorksCard";
 import PartnerCard from "@/components/homePage/PartnerCard";
 import ReviewCard from "@/components/homePage/ReviewCard";
+import { formLinks } from "@/utils/forms";
 import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
@@ -159,7 +160,7 @@ export default function Home() {
             // viewport={{ margin: "-50px" }}
             className="flex justify-center mt-[5rem]"
           >
-            <a href="https://forms.gle/b29CLTnPZAxxd8XQ9" target="_blank">
+            <a href={formLinks.advertiserEnquiry} target="_blank">
               <CallToAction label={"Advertise with us "} />
             </a>
           </motion.div>
@@ -189,7 +190,7 @@ export default function Home() {
                   people
                 </p>
                 <div className="flex-start mt-[2rem]">
-                  <Link href={"https://forms.gle/b29CLTnPZAxxd8XQ9"}>
+                  <Link href={formLinks.advertiserEnquiry}>
                     <CallToAction label={"Get Started Now"} />
                   </Link>
                 </div>
@@ -501,7 +502,7 @@ export default function Home() {
             <p className="text-[#1E1F22] text-[24px] xl:text-[32px] font-light text-center w-[80%] xl:w-[40%] mb-[2rem]">
               Get seen by <span className="font-medium">millions</span> today
             </p>
-            <a href="https://forms.gle/b29CLTnPZAxxd8XQ9" target="_blank">
+            <a href={formLinks.advertiserEnquiry} target="_blank">
               <CallToAction label={"Get Started Today"} />
             </a>
           </div>

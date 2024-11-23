@@ -21,6 +21,7 @@ import {
   DropdownSection,
   DropdownItem,
 } from "@nextui-org/dropdown";
+import { formLinks } from "@/utils/forms";
 
 const menuItems = [
   { label: "Advertise With Us", path: "/for-advertisers" },
@@ -111,7 +112,7 @@ const Navbar = () => {
           </Link>
         </NavbarItem>
         <NavbarItem>
-          <a href="https://forms.gle/b29CLTnPZAxxd8XQ9" target="_blank">
+          <a href={formLinks.advertiserEnquiry} target="_blank">
             <CallToAction label={"Advertise With Us"} />
           </a>
         </NavbarItem>
