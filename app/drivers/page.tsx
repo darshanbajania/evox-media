@@ -300,43 +300,43 @@ const DriversPage = () => {
         <Marquee speed={150} pauseOnClick gradient>
           <img
             src="assets/partner-logos/gaston-logo.png"
-            className="w-[180px] h-[80px] object-contain mr-[5rem]"
+            className="w-[120px] h-[40px] xl:w-[180px] xl:h-[80px] object-contain mr-[5rem]"
           />
           <img
             src="assets/partner-logos/jegnus-logo.png"
-            className="w-[180px] h-[80px] object-contain mr-[5rem]"
+            className="w-[120px] h-[40px] xl:w-[180px] xl:h-[80px] object-contain mr-[5rem]"
           />
           <img
             src="assets/partner-logos/matru-logo.png"
-            className="w-[180px] h-[80px] object-contain mr-[5rem]"
+            className="w-[120px] h-[40px] xl:w-[180px] xl:h-[80px] object-contain mr-[5rem]"
           />
           <img
             src="assets/partner-logos/spco-logo.png"
-            className="w-[180px] h-[80px] object-contain mr-[5rem]"
+            className="w-[120px] h-[40px] xl:w-[180px] xl:h-[80px] object-contain mr-[5rem]"
           />
           <img
             src="assets/partner-logos/meal-tech-logo.png"
-            className="w-[180px] h-[80px] object-contain mr-[5rem]"
+            className="w-[120px] h-[40px] xl:w-[180px] xl:h-[80px] object-contain mr-[5rem]"
           />
           <img
             src="assets/partner-logos/just-eat-logo.png"
-            className="w-[180px] h-[80px] object-contain mr-[5rem]"
+            className="w-[120px] h-[40px] xl:w-[180px] xl:h-[80px] object-contain mr-[5rem]"
           />
           <img
             src="assets/partner-logos/bosch-logo.png"
-            className="w-[180px] h-[80px] object-contain mr-[5rem]"
+            className="w-[120px] h-[40px] xl:w-[180px] xl:h-[80px] object-contain mr-[5rem]"
           />
           <img
             src="assets/partner-logos/apple-logo.png"
-            className="w-[180px] h-[80px] object-contain mr-[5rem]"
+            className="w-[120px] h-[40px] xl:w-[180px] xl:h-[80px] object-contain mr-[5rem]"
           />
           <img
             src="assets/partner-logos/google-logo.png"
-            className="w-[180px] h-[80px] object-contain mr-[5rem]"
+            className="w-[120px] h-[40px] xl:w-[180px] xl:h-[80px] object-contain mr-[5rem]"
           />
           <img
             src="assets/partner-logos/red-bull-logo.png"
-            className="w-[180px] h-[80px] object-contain mr-[5rem]"
+            className="w-[120px] h-[40px] xl:w-[180px] xl:h-[80px] object-contain mr-[5rem]"
           />
         </Marquee>
       </section>
