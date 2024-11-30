@@ -1,6 +1,7 @@
 "use client";
 import Blog1 from "@/components/blogs/Blog1";
 import Blog2 from "@/components/blogs/Blog2";
+import Blog3 from "@/components/blogs/Blog3";
 import Heading from "@/components/blogs/Heading";
 import Paragraph from "@/components/blogs/Paragraph";
 import Title from "@/components/blogs/Title";
@@ -18,13 +19,15 @@ const Blog = () => {
         return <Blog1 />;
       case "how-to-increase-conversions-using-ooh":
         return <Blog2 />;
+      case "from-empty-seats-to-eye-catching-ads":
+        return <Blog3 />;
 
       default:
         return <p>Could not find the blog</p>;
     }
   };
 
-  return <div className="max-w-[1240px] mx-auto p-5">{renderBlog()}</div>;
+  return <div className="max-w-[1124px] mx-auto p-5">{renderBlog()}</div>;
 };
 
 export default Blog;

@@ -8,7 +8,7 @@ import NextUIProviderWrapper from "@/components/providers/NextUiProviderWrapper"
 const inter = Inter({ subsets: ["latin"] });
 const roboto = Poppins({
   style: "normal",
-  weight: ["100", "300", "400", "500", "700", "900"],
+  weight: ["100", "300", "400", "500", "600", "700", "900"],
   subsets: ["latin"],
 });
 export const metadata: Metadata = {
