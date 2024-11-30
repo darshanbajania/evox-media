@@ -19,6 +19,12 @@ const Blogs = () => {
         imagePath={"/ooh-advertising.jpg"}
         blogId={"how-to-increase-conversions-using-ooh"}
       />
+      <BlogCard
+        title={"From Empty Seats to Eye-Catching Ads"}
+        description={"EVOX Media’s Revolution in Hyperlocal OOH Advertising"}
+        imagePath={"/ooh-advertising2.jpg"}
+        blogId={"from-empty-seats-to-eye-catching-ads"}
+      />
     </div>
   );
 };
