@@ -11,11 +11,13 @@ const Blogs = () => {
         title={"How to Run Out-of-Home Advertising Efficiently"}
         description={"Out-of-home (OOH) advertising remains a powerful tool"}
         imagePath={"/blog-1-thumbnail.png"}
+        blogId={"how-to-run-out-of-home-advertising-efficiently"}
       />
       <BlogCard
         title={"How to Increase Conversions Using OOH"}
         description={" Your Brand's Bold Leap!"}
         imagePath={"/ooh-advertising.jpg"}
+        blogId={"how-to-increase-conversions-using-ooh"}
       />
     </div>
   );

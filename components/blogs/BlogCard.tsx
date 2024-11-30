@@ -1,7 +1,7 @@
 import { useRouter } from "next/navigation";
 import React from "react";
 
-const BlogCard = ({ title, imagePath, description }) => {
+const BlogCard = ({ title, imagePath, description, blogId }) => {
   const router = useRouter();
   const handleBlogClick = (blogId: string) => {
     router.push(`/blogs/${blogId}`);
@@ -9,7 +9,7 @@ const BlogCard = ({ title, imagePath, description }) => {
   return (
     <div
       onClick={() => {
-        handleBlogClick("how-to-run-out-of-home-advertising-efficiently");
+        handleBlogClick(blogId);
       }}
       className="border-1 border-[#DBB5E5] rounded-lg relative h-[250px] sm:w-[400px] overflow-hidden cursor-pointer"
     >
