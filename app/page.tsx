@@ -133,7 +133,9 @@ export default function Home() {
               <div className="absolute  w-full h-full rounded-full bg-[#FEFAFF]/70 top-0 left-0 flex items-center justify-center">
                 <p className="text-black text-[10px] sm:text-[12px] md:text-[15px] text-center">
                   {" "}
-                  Launching Soon...
+                  Evox for delivery bicycles
+                  <br></br>
+                  <span className="font-medium">launching soon...</span>
                 </p>
               </div>
             </motion.div>
@@ -148,7 +150,8 @@ export default function Home() {
               <div className="absolute  w-full h-full rounded-full bg-[#FEFAFF]/70 top-0 left-0 flex items-center justify-center">
                 <p className="text-black text-[10px] sm:text-[12px] md:text-[15px] text-center">
                   {" "}
-                  Launching Soon...
+                  Evox for cabbies{" "}
+                  <span className="font-medium">launching soon...</span>
                 </p>
               </div>
             </motion.div>
