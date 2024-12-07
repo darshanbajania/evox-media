@@ -245,7 +245,7 @@ export default function Home() {
           </motion.div>
         </section>
         <section id="how-it-works" className="mb-[300px]">
-          <h2 className="text-2xl xl:text-3xl text-center mt-[5rem] ">
+          <h2 className="text-3xl xl:text-5xl font-medium text-center mt-[5rem] ">
             How it Works?
           </h2>
           <p className="text-xl xl:text-2xl py-2 text-center text-[#51545C] mt-[2rem] bg-[#FEF8FF]">
@@ -301,7 +301,7 @@ export default function Home() {
         </section>
         <section className="max-w-[80%] mx-auto mb-[300px]">
           <div className=" pb-[50px]">
-            <h2 className="text-2xl xl:text-3xl mb-[4rem] ">
+            <h2 className="text-3xl xl:text-4xl font-medium mb-[4rem] ">
               Pick your perfect ad-space without the hassle!
             </h2>
             <div className="flex flex-col xl:flex-row justify-between items-center xl:items-start gap-y-20 xl:gap-y-0">
@@ -361,7 +361,7 @@ export default function Home() {
           </div>
         </section>
         <section id="how-it-works" className="mb-[100px]">
-          <h2 className="text-3xl text-center mt-[5rem] mb-[3rem] ">
+          <h2 className="text-3xl xl:text-5xl text-center mt-[5rem] mb-[3rem] ">
             The Tech Bit
           </h2>
           <div className="flex justify-center  bg-[#F5FFFF] py-[40px] xl:py-[100px] mb-[50px]">
@@ -516,7 +516,7 @@ export default function Home() {
           className="max-w-[90%] mx-auto mt-[200px] mb-[50px] xl:mb-[180px]"
         >
           <div className="pt-[10rem]  pb-[10rem] flex flex-col items-center justify-center">
-            <p className="text-[#1E1F22] text-[24px] xl:text-[32px] font-light text-center w-[80%] xl:w-[40%] mb-[2rem]">
+            <p className="text-[#1E1F22] text-3xl xl:text-5xl  font-light text-center w-[80%] xl:w-[40%] mb-[2rem]">
               Get seen by <span className="font-medium">millions</span> today
             </p>
             <a href={formLinks.advertiserEnquiry} target="_blank">
