@@ -183,9 +183,9 @@ export default function Home() {
           </motion.div>
         </section>
 
-        <section id="services" className="overflow-hidden">
-          <div className="max-w-[1440px] mx-auto">
-            <div className="flex flex-col md:flex-row h-[auto] md:h-[500px]  pt-5 px-5">
+        <section id="services" className="overflow-x-hidden">
+          <div className="max-w-[90%] mx-auto">
+            <div className="flex flex-col md:flex-row h-[auto]   pt-5 px-5">
               <motion.div
                 initial={{ translateX: -100, opacity: 0 }}
                 whileInView={{ translateX: 0, opacity: 1 }}
@@ -198,7 +198,7 @@ export default function Home() {
                   Get upto <span className="font-medium">28 million</span> ad
                   runs a day
                 </h1>
-                <p className="text-[16px] md:text-[18px] xl:text-[24px] text-[#51545C] mt-[4rem] w-[80%] md:w-[100%] xl:w-[70%]">
+                <p className="text-[16px] md:text-[18px] xl:text-[24px] text-[#51545C] mt-[2rem] w-[80%] md:w-[100%] xl:w-[70%]">
                   Advertise your brand on our network of digital screen and
                   reach millions of your potential buyer instantaneously
                 </p>
@@ -218,9 +218,12 @@ export default function Home() {
                 exit={{ translateX: 0, opacity: 1 }}
                 transition={{ duration: 0.5, ease: "easeIn" }}
                 viewport={{ margin: "-200px 0px 0px 0px" }}
-                className=" md:w-[50%] flex items-center justify-center mt-[5rem] md:mt-0"
+                className=" md:w-[50%] flex items-center justify-center mt-[5rem] md:mt-0 "
               >
-                <img src="3d-bike.png" className="w-[100%]" />
+                <img
+                  src="3d-bike.png"
+                  className="h-[300px] lg:h-[800px] object-contain"
+                />
               </motion.div>
             </div>
           </div>
