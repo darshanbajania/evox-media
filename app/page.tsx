@@ -133,7 +133,7 @@ export default function Home() {
               <div className="absolute  w-full h-full rounded-full bg-[#FEFAFF]/70 top-0 left-0 flex items-center justify-center">
                 <p className="text-black text-lg sm:text-[12px] md:text-xl text-center w-[80%]">
                   {" "}
-                  Evox for Delivery Bicycles
+                  Evox for cabbies
                   <br></br>
                   {/* <span className="text-black font-medium">
                       launching soon...
@@ -156,9 +156,9 @@ export default function Home() {
             >
               <img src="assets/bicycle.png" className="h-[80%] h-[80%]" />
               <div className="absolute  w-full h-full rounded-full bg-[#FEFAFF]/70 top-0 left-0 flex items-center justify-center">
-                <p className="text-black text-lg sm:text-[12px] md:text-xl text-center">
+                <p className="text-black text-lg sm:text-[12px] md:text-xl text-center w-[80%]">
                   {" "}
-                  Evox for cabbies{" "}
+                  Evox for Delivery Bicycles
                   {/* <span className="font-medium">launching soon...</span> */}
                 </p>
               </div>
