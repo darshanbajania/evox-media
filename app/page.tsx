@@ -228,7 +228,7 @@ export default function Home() {
             </div>
           </div>
         </section>
-        <section
+        {/* <section
           id="how-it-works"
           className="max-w-[90%] mx-auto mt-[300px] mb-[300px]"
         >
@@ -246,6 +246,30 @@ export default function Home() {
               <span className="font-medium">take your brand to them</span>
             </p>
           </motion.div>
+        </section> */}
+        <section id="how-it-works" className=" relative mt-[300px] mb-[300px]">
+          <div className="">
+            <img
+              src="advertising-ooh-banner.png"
+              className="w-full h-[80vh] xl:h-[90vh] object-cover xl:object-left-top"
+            />
+            <div className="absolute w-[50%] xl:w-[40%] xl:h-[100%] top-[50%] transform translate-y-[-50%] right-[5%] p-[1rem]  xl:p-[4rem]">
+              <motion.div
+                initial={{ translateY: 150, opacity: 0 }}
+                whileInView={{ translateY: 0, opacity: 1 }}
+                exit={{ translateY: 0, opacity: 1 }}
+                transition={{ duration: 0.5, ease: "easeIn" }}
+                viewport={{ margin: "-100px" }}
+                className="w-full h-full p-[1rem]  flex justify-center items-center bg-[#2D292995] "
+              >
+                <p className="text-[white] text-[2.2rem] xl:text-[3.2rem] font-thin text-center w-[100%] lg:w-[80%] xl:w-[80%] ">
+                  <span className="font-medium">Don’t wait</span> for people to
+                  walk by your Ad on the banner,{" "}
+                  <span className="font-medium">take your brand to them</span>
+                </p>
+              </motion.div>
+            </div>
+          </div>
         </section>
         <section id="how-it-works" className="mb-[300px]">
           <h2 className="text-3xl xl:text-5xl font-medium text-center mt-[5rem] ">
