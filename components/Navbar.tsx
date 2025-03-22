@@ -111,7 +111,7 @@ const Navbar = () => {
             <p className="text-[1.1rem]">Blogs</p>
           </Link>
         </NavbarItem>
-        <NavbarItem>
+        <NavbarItem className="hidden sm:flex">
           <a href={formLinks.advertiserEnquiry} target="_blank">
             <CallToAction label={"Advertise With Us"} />
           </a>

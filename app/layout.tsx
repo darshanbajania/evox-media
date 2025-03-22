@@ -29,8 +29,8 @@ export default function RootLayout({
           {children}
           <footer>
             <div className="  flex min-h-[320px] bg-[#FEF9FF] py-5">
-              <div className="w-[90%] mx-auto flex items-center justify-center">
-                <div className="w-[50%] ">
+              <div className="w-[90%] mx-auto sm:flex items-center justify-center">
+                <div className="sm:w-[50%] ">
                   <div className="w-[80%]">
                     <h2 className="text-2xl font-medium">About Us</h2>
                     <p className="text-sm xl:text-lg mt-3 xl:mt-0">
@@ -47,7 +47,7 @@ export default function RootLayout({
                     </p>
                   </div>
                 </div>
-                <div className="w-[50%] flex items-center flex-col justify-center py-2">
+                <div className="sm:w-[50%] sm:flex items-center flex-col justify-center py-2">
                   <p className="text-sm xl:text-xl">hello@evox.media</p>
                   <p className="text-sm xl:text-xl">Phone: +44 03330 500911</p>
                   <div className="flex justify-between w-[30%] my-[2rem]">
