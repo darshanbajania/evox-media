@@ -3,6 +3,7 @@ import FormField from "@/components/FormField";
 import BenefitsCard from "@/components/advertisersPage/BenefitsCard";
 import HowItWorksCard from "@/components/advertisersPage/HowItWorksCard";
 import ReviewCard from "@/components/homePage/ReviewCard";
+import { formLinks } from "@/utils/forms";
 import Link from "next/link";
 import React from "react";
 
@@ -10,7 +11,7 @@ const page = () => {
   return (
     <div className="max-w-[1244px] mx-auto">
       <section>
-        <div className="max-w-[90%] mx-auto relative py-[5rem] mb-[300px] xl:mb-[0px]">
+        <div className="max-w-[90%] mx-auto relative py-[5rem] mb-[100px] xl:mb-[0px]">
           <div className="flex flex-col h-[500px]  ">
             <div className="w-[100%] xl:w-[50%] relative h-full">
               <img
@@ -49,10 +50,12 @@ const page = () => {
           </div> */}
         </div>
       </section>
-      <section>
-        <div className="pt-[100px] pb-[50px]">
-          <h2 className="text-xl mb-[2rem] ">Why Advertise with Evox Media?</h2>
-          <div className="flex justify-between">
+      <section className="mt-[5rem]">
+        <div className=" mt-[5rem] px-5">
+          <h2 className="text-2xl mb-[2rem] ">
+            Why Advertise with Evox Media?
+          </h2>
+          <div className="flex flex-col xl:flex-row justify-between items-center xl:items-start gap-5">
             <BenefitsCard
               title={"Wide Reach"}
               description={"Capture attention across the city"}
@@ -77,25 +80,25 @@ const page = () => {
         </div>
       </section>
       <section className="mt-[5rem] pb-[2rem]">
-        <h2 className="text-xl text-center">How it Works?</h2>
-        <div className="flex justify-between mt-[5rem]">
+        <h2 className="text-2xl text-center">How it Works?</h2>
+        <div className="flex flex-col xl:flex-row justify-between items-center xl:items-start gap-5 mt-[5rem]">
           <HowItWorksCard
-            title={"Select Your Campaign"}
+            title={"1. Select Your Campaign"}
             description={"Choose your advertising campaign details"}
             imagePath={"people-discussing.png"}
           />
           <HowItWorksCard
-            title={"Target Locations"}
+            title={"2. Target Locations"}
             description={"Select target locations for maximum reach"}
             imagePath={"locations.png"}
           />
           <HowItWorksCard
-            title={"Display Ads"}
+            title={"3. Display Ads"}
             description={"Your ads are displayed on delivery boxes"}
             imagePath={"delivery-box-advertisement-3.png"}
           />
           <HowItWorksCard
-            title={"Track Performance"}
+            title={"4. Track Performance"}
             description={"Monitor ad performance with our analytics"}
             imagePath={"person-using-laptop.png"}
           />
@@ -103,7 +106,7 @@ const page = () => {
       </section>
       <section className="mt-[5rem] pb-[2rem]">
         <h2 className="text-xl mb-[3rem] text-center">Success Stories</h2>
-        <div className="mt-5 flex justify-around  ">
+        <div className="mt-5 flex flex-col xl:flex-row items-center xl:items-start gap-5 justify-around  ">
           <ReviewCard
             review={
               "Our brand&#39;s visibility increased significantly with Evox Media&#39;s mobile ads. Highly effective!"
@@ -119,11 +122,15 @@ const page = () => {
         </div>
       </section>
       <section id="contact-us" className="mt-[5rem] mb-[3rem]">
-        <h2 className="text-xl mb-[3rem] text-center">
+        <h2 className="text-[1.6rem] xl:text-[2rem] mb-[2rem] text-center">
           Start Your Campaign Today
         </h2>
-
-        <div className="border-1  border-[#EBE1F2] w-[50%] p-5 mx-auto rounded-lg">
+        <div className="flex justify-center">
+          <a href={formLinks.advertiserEnquiry} target="_blank">
+            <CallToAction label={"Advertise with Us"} />
+          </a>
+        </div>
+        {/* <div className="border-1  border-[#EBE1F2] w-[50%] p-5 mx-auto rounded-lg">
           <FormField label="Full Name" id={"full-name"} />
           <FormField label="Email Address" id={"email-address"} />
           <FormField label="Phone Number" id={"phone-number"} />
@@ -132,7 +139,7 @@ const page = () => {
           <div className="flex justify-center mt-[2rem]">
             <CallToAction label={"Send Message"} />
           </div>
-        </div>
+        </div> */}
       </section>
     </div>
   );
