@@ -15,7 +15,7 @@ const page = () => {
           <div className="flex flex-col h-[500px]  ">
             <div className="w-[100%] xl:w-[50%] relative h-full">
               <img
-                src="delivery-box-screen-advertisement.png"
+                src="delivery-box-screen-advertisement-2.jpg"
                 className="w-full h-full object-cover"
               />
             </div>
@@ -50,8 +50,8 @@ const page = () => {
           </div> */}
         </div>
       </section>
-      <section className="mt-[5rem]">
-        <div className=" mt-[5rem] px-5">
+      <section className="pt-[5rem]">
+        <div className="  px-5">
           <h2 className="text-2xl mb-[2rem] ">
             Why Advertise with Evox Media?
           </h2>

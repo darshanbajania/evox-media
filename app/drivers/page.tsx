@@ -37,7 +37,10 @@ const DriversPage = () => {
         <div className="max-w-[90%] mx-auto relative py-[5rem] mb-[300px] xl:mb-[0px] ">
           <div className="flex flex-col h-[500px]  ">
             <div className="w-[100%] xl:w-[50%] relative h-full">
-              <img src="3d-bike.png" className="w-full h-full object-contain" />
+              <img
+                src="rider-with-bike.jpg"
+                className="w-full h-full object-contain"
+              />
             </div>
 
             <div className="flex  flex-1 flex-col justify-center xl:absolute xl:w-[40%] top-0 h-[100%] right-0 mt-[100px] xl:mt-0">

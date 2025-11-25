@@ -92,7 +92,7 @@ const Navbar = () => {
       </NavbarContent> */}
       <NavbarContent justify="end" className=" gap-10">
         <NavbarItem className="hidden sm:flex">
-          <Link color="foreground" href="/#about-us">
+          <Link color="foreground" href="/for-advertisers">
             <p className="text-[1.1rem]">Advertise with Us</p>
           </Link>
         </NavbarItem>
