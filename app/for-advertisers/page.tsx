@@ -28,7 +28,9 @@ const page = () => {
                 Advertise on the Move and Maximize Your Brand’s Visibility
               </p>
               <div className="flex-start mt-[2rem]">
-                <CallToAction label={"Get Started Today"} />
+                <a href={formLinks.advertiserEnquiry} target="_blank">
+                  <CallToAction label={"Get Started Today"} />
+                </a>
               </div>
             </div>
           </div>
