@@ -118,8 +118,8 @@ export default function Home() {
               className="w-[340px] sm:w-[340px] md:w-[380px] h-[340px] sm:h-[340px]  md:h-[380px] rounded-full bg-[#FEFAFF] flex items-center justify-center pr-4"
             >
               <img
-                src="3d-bike.png"
-                className="h-[100%] w-[100%] object-contain "
+                src="assets/bicycle.png"
+                className="h-[90%] w-[90%] object-contain "
               />
             </motion.div>
             <motion.div
@@ -129,11 +129,11 @@ export default function Home() {
               transition={{ duration: 0.5, ease: "easeIn" }}
               className="w-[240px] sm:w-[240px] md:w-[280px] h-[240px]  sm:h-[240px]  md:h-[280px] rounded-full bg-[#FEFAFF] flex items-center justify-center p-2 md:p-4 relative"
             >
-              <img src="assets/car.png" className="h-[90%] w-[90%]" />
+              <img src="3d-bike.png" className="h-[80%] w-[100%]" />
               <div className="absolute  w-full h-full rounded-full bg-[#FEFAFF]/70 top-0 left-0 flex items-center justify-center">
                 <p className="text-black text-lg sm:text-[12px] md:text-xl text-center w-[80%]">
                   {" "}
-                  Evox for cabbies
+                  Evox for Delivery Bikes
                   <br></br>
                   {/* <span className="text-black font-medium">
                       launching soon...
@@ -154,11 +154,11 @@ export default function Home() {
               transition={{ duration: 0.5, ease: "easeIn" }}
               className="w-[240px] sm:w-[240px] md:w-[280px] h-[240px]  sm:h-[240px]  md:h-[280px] rounded-full bg-[#FEFAFF] flex items-center justify-center p-2 md:p-4 relative"
             >
-              <img src="assets/bicycle.png" className="h-[80%] h-[80%]" />
+              <img src="assets/car.png" className="h-[80%] h-[80%]" />
               <div className="absolute  w-full h-full rounded-full bg-[#FEFAFF]/70 top-0 left-0 flex items-center justify-center">
                 <p className="text-black text-lg sm:text-[12px] md:text-xl text-center w-[80%]">
                   {" "}
-                  Evox for Delivery Bicycles
+                  Evox for cabbies
                   {/* <span className="font-medium">launching soon...</span> */}
                 </p>
               </div>
