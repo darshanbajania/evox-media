@@ -6,6 +6,7 @@ import HowItWorksCardV2 from "@/components/advertisersPage/HowItWorksCardV2";
 import HowItWorksCard from "@/components/homePage/HowItWorksCard";
 import PartnerCard from "@/components/homePage/PartnerCard";
 import ReviewCard from "@/components/homePage/ReviewCard";
+import SlideShow from "@/components/slideshow/SlideShow";
 import { formLinks } from "@/utils/forms";
 import { motion } from "framer-motion";
 import Image from "next/image";
@@ -16,9 +17,9 @@ import Marquee from "react-fast-marquee";
 export default function Home() {
   return (
     <div className="">
-      <section>
-        <div className="flex h-[90vh] relative">
-          <div className="absolute  h-[90vh] w-full  -z-10">
+      <section className="">
+        <div className="flex h-[70vh] md:h-[100vh] relative border-1">
+          {/* <div className="absolute  h-[90vh] w-full  -z-10">
             <div className="relative overflow-hidden">
               <div className="bg-black opacity-30 absolute top-0 left-0 w-full h-full"></div>
               <div className=" absolute left-[0%] sm:left-[10%] lg:left-[55%] top-[48%] lg:top-[20%] bottom-[0px] right-[0px] w-full h-full">
@@ -33,13 +34,14 @@ export default function Home() {
                   className="w-full h-full object-cover"
                 />
               </div>
-              {/* <video autoPlay className="w-full h-[700px]">
-                <source src="food-delivery-video.mp4" type="video/mp4" />
-              </video> */}
             </div>
+          </div> */}
+          <div className="bg-black opacity-40 absolute top-0 left-0 w-full h-[70vh] md:h-[100vh] -z-12"></div>
+          <div className="absolute top-0 left-0 w-full h-[70vh] md:h-[100vh] -z-10">
+            <SlideShow />
           </div>
-          <div className="flex ml-[5%] flex-col w-[100%] pt-[8%]  bg-red items-center lg:items-start">
-            <h1 className="text-[3rem] lg:text-[4rem] w-[100%]  lg:w-[50%]   text-white text-center lg:text-left font-regular ">
+          <div className="flex ml-[5%] flex-col w-[100%] pt-[50%] lg:pt-[8%]  bg-red items-center lg:items-start  z-0">
+            <h1 className="text-[2rem] lg:text-[4rem] w-[100%]  lg:w-[50%]   text-white text-center lg:text-left font-regular ">
               The only out of home advertising that delivers conversions
             </h1>
             <div className="mt-[4rem]">
@@ -63,7 +65,7 @@ export default function Home() {
           </div> */}
         </div>
       </section>
-      <div className=" pt-[4rem] lg:pt-[8rem]">
+      <div className=" pt-[2rem] lg:pt-[8rem]">
         <section id="our-supporters" className="max-w-[90%] mx-auto ">
           <div className="flex items-center flex-col lg:flex-row relative h-[200px] gap-x-10">
             <div className=" pr-3 h-full  relative flex items-stretch">

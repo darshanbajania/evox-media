@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Inter, Poppins, Roboto } from "next/font/google";
 import "./globals.css";
-
+import "react-slideshow-image/dist/styles.css";
 import Navbar from "@/components/Navbar";
 import NextUIProviderWrapper from "@/components/providers/NextUiProviderWrapper";
 
