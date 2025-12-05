@@ -110,7 +110,7 @@ export default function Home() {
               installed on scooters, taxis and bicycles{" "}
             </p>
           </div>
-          <div className="flex flex-col md:flex-row justify-center pt-[5rem] gap-[40px] md:gap-[80px] items-center">
+          <div className="flex flex-col md:flex-row justify-center pt-[5rem] gap-[5rem] md:gap-[8rem] items-center">
             <motion.div
               initial={{ translateY: 50, opacity: 0 }}
               whileInView={{ translateY: 0, opacity: 1 }}
@@ -129,17 +129,14 @@ export default function Home() {
               whileInView={{ translateY: 0, opacity: 1 }}
               exit={{ translateY: 0, opacity: 1 }}
               transition={{ duration: 0.5, ease: "easeIn" }}
-              className="w-[240px] sm:w-[240px] md:w-[280px] h-[240px]  sm:h-[240px]  md:h-[280px] rounded-full bg-[#FEFAFF] flex items-center justify-center p-2 md:p-4 relative"
+              className="w-[340px] sm:w-[340px] md:w-[380px] h-[340px] sm:h-[340px]  md:h-[380px] rounded-full bg-[#FEFAFF] flex items-center justify-center p-2 md:p-4 relative"
             >
               <img src="3d-bike.png" className="h-[80%] w-[100%]" />
-              <div className="absolute  w-full h-full rounded-full bg-[#FEFAFF]/70 top-0 left-0 flex items-center justify-center">
+              {/* <div className="absolute  w-full h-full rounded-full bg-[#FEFAFF]/70 top-0 left-0 flex items-center justify-center">
                 <p className="text-black text-lg sm:text-[12px] md:text-xl text-center w-[80%]">
                   {" "}
                   Evox for Delivery Bikes
                   <br></br>
-                  {/* <span className="text-black font-medium">
-                      launching soon...
-                    </span> */}
                 </p>
               </div>
               <div className="absolute -top-[20px] -right-[20px]  ">
@@ -147,14 +144,14 @@ export default function Home() {
                   src="comming-soon.png"
                   className="h-[100px] w-[100px] object-contain"
                 />
-              </div>
+              </div> */}
             </motion.div>
             <motion.div
               initial={{ translateY: 50, opacity: 0 }}
               whileInView={{ translateY: 0, opacity: 1 }}
               exit={{ translateY: 0, opacity: 1 }}
               transition={{ duration: 0.5, ease: "easeIn" }}
-              className="w-[240px] sm:w-[240px] md:w-[280px] h-[240px]  sm:h-[240px]  md:h-[280px] rounded-full bg-[#FEFAFF] flex items-center justify-center p-2 md:p-4 relative"
+              className="w-[260px] sm:w-[260px] md:w-[300px] h-[260px]  sm:h-[260px]  md:h-[300px] rounded-full bg-[#FEFAFF] flex items-center justify-center p-2 md:p-4 relative"
             >
               <img src="assets/car.png" className="h-[80%] h-[80%]" />
               <div className="absolute  w-full h-full rounded-full bg-[#FEFAFF]/70 top-0 left-0 flex items-center justify-center">
