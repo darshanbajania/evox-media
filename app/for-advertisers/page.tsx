@@ -97,7 +97,7 @@ const page = () => {
           <HowItWorksCard
             title={"3. Display Ads"}
             description={"Your ads are displayed on delivery boxes"}
-            imagePath={"delivery-box-advertisement-3.png"}
+            imagePath={"rider-image.jpg"}
           />
           <HowItWorksCard
             title={"4. Track Performance"}
